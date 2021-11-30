@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #eeee;
+}
+.contact-us-logo {
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+}
+.contact-us .contact-us-form {
+    position: relative;
+    display: grid;
+    margin: 0 35%;
+    width: 30%;
+    height: max-content;
+    background: rgb(219, 219, 219);
+    padding: 10px 20px;
+    text-align: center;
+
+}
+.contact-us .contact-us-form input{
+    padding: 5px 0;
+    margin-top: 15px;
+}
+.contact-us .contact-us-form textarea {
+    margin-top: 20px;
+}

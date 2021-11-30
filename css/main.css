@@ -1,0 +1,232 @@
+/* main color #2aad02 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* typography */
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+h4 {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: justify;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: justify;
+}
+
+/* spacing */
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+
+/* logo */
+.navbar .navbar-brand img {
+    width: 120px;
+    height: 98px;
+}
+/* navbar */
+.navbar{
+    background-color: white !important;
+    height: 105px;
+}
+.navbar .nav-item{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.navbar .nav-item .nav-link {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 20PX;
+    padding: 0;
+    transition: all .4s ease-in-out;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #2aad02;
+}
+.navbar .main-btn{
+    background: #2aad02;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 20px;
+    transition: all .4s ease-in-out;
+}
+.navbar .main-btn:hover{
+    background: black;
+}
+
+/* hero section */
+.hero {
+    height: 80vh;
+    background: rgb(245, 245, 245);
+}
+.hero img {
+    width: auto;
+    height: 80vh;
+}
+.hero span {
+background: #2aad02;
+display: inline-block;
+padding: 5px 10px;
+margin-bottom: 5px;
+color: white;
+font-size: 14px;
+font-weight: 500;
+}
+.hero .btn {
+background: #2aad02;
+display: inline-block;
+padding: 10px 20px;
+color: white;
+font-size: 15px;
+font-weight: 500;
+transition: all .4s ease-in-out;
+}
+.hero .btn:hover{
+    background: black;
+}
+/* service section start */
+.service{
+    height: 150vh;
+}
+.service h2 {
+    text-align: center;
+    padding-top: 50px;
+}
+.service p {
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+/* testimonial section start */
+.testimonial{
+    height: 50vh;
+    background: rgb(245, 245, 245);
+}
+.testimonial h2 {
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: underline solid 3px #2aad02;
+}
+.testimonial p {
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* clint section start */
+.clint{
+    height: 40vh;
+}
+.clint h2{
+    text-align: center;
+    padding-top: 40px;
+}
+.clint img{
+    width: 100px;
+    height: auto;
+}
+
+/* tech section start */
+.tech {
+    height: 40vh;
+    background: rgb(245, 245, 245);
+}
+.tech h2{
+    text-align: center;
+    padding-top: 50px;
+}
+.tech img{
+    width: 100px;
+    height: auto;
+}
+
+/* project section start */
+.project {
+    height: 60vh;
+}
+.project h2{
+text-align: center;
+padding-top: 50px;
+}
+.project img {
+    width: 400px;
+    height: 300px;
+}
+
+/* footer section start */
+.footer{
+    background: rgb(26, 26, 26);
+    color: white;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+}
+.footer img {
+    padding-top: 40px;
+    width: 150px;
+    height: auto;
+}
+.footer .sitemap-container {
+    list-style: none;
+    padding-top: 40px;
+}
+.footer .contact-us-form {
+   position: absolute;
+   display: grid;
+   text-align: center;
+   margin: 30px 0;
+   width: 25%;
+}
+.footer .contact-us-form input {
+    margin-top: 5px;
+    padding: 3px 0;
+}
+.footer .contact-us-form textarea{
+    margin-top: 5px;
+}
+.footer .contact-us-form .button {
+    padding: 5px 20px;
+}
+
+.footer .copyright-container p {
+    text-align: center;
+}
