@@ -98,7 +98,7 @@ p {
 
 .carousel-item{
     height: 80vh;
-    background: #777;
+    background: #000;
     color: white;
     position: relative;
     background-position: center;
@@ -110,6 +110,21 @@ p {
     left: 0;
     right: 0;
     padding-bottom: 50px;
+    padding-left: 30px;
+}
+.carousel-item .carousel-caption p {
+    text-align: center;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6;
 }
 
 .carousel-item span {
@@ -164,34 +179,37 @@ transition: all .4s ease-in-out;
 
 /* clint section start */
 .clint{
-    height: 40vh;
+    height: 50vh;
 }
 .clint h2{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 .clint img{
     width: 100px;
     height: auto;
+    margin-top: 30px;
 }
 
 /* tech section start */
 .tech {
-    height: 40vh;
+    height: 50vh;
     background: rgb(245, 245, 245);
 }
 .tech h2{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .tech img{
     width: 100px;
     height: auto;
+    margin-top: 40px;
 }
 
 /* project section start */
 .project {
     height: 60vh;
+    margin-bottom: 30px;
 }
 .project h2{
 text-align: center;
