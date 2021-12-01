@@ -3,29 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: #eeee;
-}
 .contact-us-logo {
-    margin-top: 20px;
-    width: 200px;
+    width: 150px;
     height: auto;
+    position: absolute;
 }
-.contact-us .contact-us-form {
-    position: relative;
+.contact-us {
+    display: flex;
+    margin: 0 2%;
+}
+.contact-us-form {
+    background: rgb(240, 240, 240);
+    position: absolute;
     display: grid;
-    margin: 0 35%;
-    width: 30%;
-    height: max-content;
-    background: rgb(219, 219, 219);
-    padding: 10px 20px;
+    margin: 5% 30%;
+    width: 40%;
+    height: 85vh;
+    padding: 10px 30px;
     text-align: center;
-
 }
-.contact-us .contact-us-form input{
+.contact-us-form input{
     padding: 5px 0;
     margin-top: 15px;
 }
-.contact-us .contact-us-form textarea {
+.contact-us-form textarea {
     margin-top: 20px;
 }
