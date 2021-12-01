@@ -95,15 +95,24 @@ p {
 }
 
 /* hero section */
-.hero {
+
+.carousel-item{
     height: 80vh;
-    background: rgb(245, 245, 245);
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
 }
-.hero img {
-    width: auto;
-    height: 80vh;
+.carousel-item .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
 }
-.hero span {
+
+.carousel-item span {
 background: #2aad02;
 display: inline-block;
 padding: 5px 10px;
@@ -112,7 +121,7 @@ color: white;
 font-size: 14px;
 font-weight: 500;
 }
-.hero .btn {
+.carousel-item .btn {
 background: #2aad02;
 display: inline-block;
 padding: 10px 20px;
@@ -121,9 +130,10 @@ font-size: 15px;
 font-weight: 500;
 transition: all .4s ease-in-out;
 }
-.hero .btn:hover{
+.carousel-item .btn:hover{
     background: black;
 }
+
 /* service section start */
 .service{
     height: 150vh;
