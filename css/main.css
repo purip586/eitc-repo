@@ -166,7 +166,7 @@ transition: all .4s ease-in-out;
     height: auto;
 }
 .service .row {
-    margin-top: 8%;
+    margin-top: 6%;
 }
 .service h2 {
     text-align: center;
@@ -176,7 +176,7 @@ transition: all .4s ease-in-out;
 .service p {
     text-align: justify;
     margin-top: 10px;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 /* testimonial section start */
 .testimonial{
