@@ -69,38 +69,37 @@ p {
 }
 .navbar .nav-item .nav-link {
     color: black;
-    font-size: 15px;
+    font-size: 1.1em;
     font-weight: 500;
     margin: 0 20PX;
     padding: 0;
     transition: all .4s ease-in-out;
 }
-.navbar .nav-item .nav-link:hover{
-    color: #2aad02;
-}
-.navbar .main-btn{
+.navbar #main-btn{
     background: #2aad02;
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 1.1em;
     font-weight: 500;
-    padding: 10px 30px;
+    padding: 0 10px;
     border-radius: 5px;
     display: inline-block;
     margin-left: 20px;
     transition: all .4s ease-in-out;
 }
-.navbar .main-btn:hover{
+.navbar #main-btn:hover{
     background: black;
 }
-.fa {
-    padding: 20px;
-    font-size: 50px;
-    /* width: 40px; */
+.navbar .navbar-nav .nav-link:hover{
+    color: #808080;
+}
+
+.fab {
+    padding-left: 20px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
   }
-
 
 
 /* hero section */
