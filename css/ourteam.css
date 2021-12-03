@@ -14,7 +14,7 @@ body{
     height: 60px;
     background-color: #269b02;
     opacity: 0.5;
-    border: 5px solid white;
+    border: 5px solid #269b02;
 }
 .box div:nth-child(1){
     top: 12%;
