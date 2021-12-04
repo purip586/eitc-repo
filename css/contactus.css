@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: linear-gradient(360deg, #ffff 0%, #269b02 100%);
+    background: #269b02;
 }
 .box div {
     position: absolute;

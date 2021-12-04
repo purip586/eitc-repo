@@ -82,7 +82,6 @@ p {
     font-size: 1.1em;
     font-weight: 500;
     padding: 0 10px;
-    border-radius: 5px;
     display: inline-block;
     margin-left: 20px;
     transition: all .4s ease-in-out;
@@ -166,12 +165,12 @@ transition: all .4s ease-in-out;
     height: auto;
 }
 .service .row {
-    margin-top: 6%;
+    margin-top: 8%;
 }
 .service h2 {
     text-align: center;
-    padding-top: 50px;
-    font-size: 25px;
+    padding-top: 4%;
+    font-size: 30px;
 }
 .service p {
     text-align: justify;
@@ -249,28 +248,29 @@ padding-top: 50px;
     width: 150px;
     height: auto;
 }
-.footer .sitemap-container {
+.footer .footer-nav {
     list-style: none;
     padding-top: 40px;
 }
-.footer .contact-us-form {
-   position: absolute;
-   display: grid;
-   text-align: center;
-   margin: 30px 0;
-   width: 25%;
+.footer .footer-nav li {
+    padding-top: 10px;
+    cursor: pointer;
 }
-.footer .contact-us-form input {
-    margin-top: 5px;
-    padding: 3px 0;
+.footer .footer-nav li:hover{
+    color: #2aad02;
 }
-.footer .contact-us-form textarea{
-    margin-top: 5px;
+.footer .footer-nav-icon{
+    list-style: none;
+    padding-top: 40px;
 }
-.footer .contact-us-form .button {
-    padding: 5px 20px;
+.footer .footer-nav-icon li{
+    padding-top: 20px;
+    cursor: pointer;
 }
 
+
 .footer .copyright-container p {
+    background-color: black;
     text-align: center;
+    padding: 5px 0;
 }
