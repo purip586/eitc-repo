@@ -10,21 +10,17 @@ body{
     font-family: 'Ibarra Real Nova', serif;
     font-family: 'Poppins', sans-serif;    
     font-size: 1.2em;
-    background-color: rgb(250, 250, 250);
 }
 
 .navbar{
-        display: flex;
-        flex-direction: row;
-        padding: 3% 0;
-        background-color: rgb(250, 250, 250);
 
        .container{
         display: flex;
         flex-direction: row;
+        padding: 3% 0;
 
         .logo{
-            width: 10%;
+            width: 30%;
             height: auto;
         }
     }
