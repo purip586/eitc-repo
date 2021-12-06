@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700;800");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -19,21 +19,21 @@ h1 {
 h2 {
   font-size: 1.1em;
   font-weight: 600;
-  padding-top: 2%;
+  padding-top: 3%;
   line-height: 1.5em;
 }
 
 h3 {
   font-size: 1em;
   font-weight: 500;
-  padding-top: 2%;
+  padding-top: 1%;
   line-height: 1.5em;
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 400;
-  padding-top: 3%;
+  padding-top: 4%;
   line-height: 1.7em;
 }
 
@@ -96,10 +96,25 @@ p {
   color: white;
 }
 
+.service .container {
+  padding-top: 10%;
+}
+
 .service .container img {
   max-width: 100%;
   width: 50%;
   height: auto;
   padding-top: 15%;
+}
+
+.testimonials {
+  padding: 5% 3%;
+  text-align: center;
+  background: #313131;
+  color: white;
+}
+
+.testimonials .container {
+  padding-top: 10%;
 }
 /*# sourceMappingURL=main.css.map */
