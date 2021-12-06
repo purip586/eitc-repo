@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700;800');
 
 *{
     margin: 0;
@@ -13,24 +13,24 @@ body{
 
 h1{
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 800;
     padding-top: 3%;
 }
 h2{
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 600;
     padding-top: 2%;
     line-height: 1.5em;
 }
 h3{
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 500;
     padding-top: 2%;
     line-height: 1.5em;
 }
 p{
-    font-size: 0.8em;
-    font-weight: 500;
+    font-size: 0.9em;
+    font-weight: 400;
     padding-top: 3%;
     line-height: 1.7em;
 }
@@ -62,7 +62,7 @@ p{
 .hero-sec{
     background: #000;
     color: white;
-    padding: 5% 3%;
+    padding: 10% 5%;
     height: max-content;
     width: 100%;
 
@@ -89,7 +89,7 @@ p{
 .service{
     padding: 5% 3%;
     text-align: center;
-    background: rgb(1, 43, 0);
+    background: rgb(1, 46, 0);
     color: white;
     
     .container{
@@ -98,7 +98,7 @@ p{
             max-width: 100%;
             width: 50%;
             height: auto;
-            padding-top: 10%;
+            padding-top: 15%;
         }
        
 
