@@ -32,7 +32,7 @@ p{
     font-size: 0.8em;
     font-weight: 400;
     padding-top: 4%;
-    line-height: 1.7em;
+    line-height: 1.9em;
 }
 
 //navbar
@@ -91,6 +91,8 @@ p{
     text-align: center;
     background: rgb(1, 46, 0);
     color: white;
+    width: 100%;
+    height: max-content;
     
     .container{
         padding-top: 10%;
@@ -102,7 +104,6 @@ p{
             padding-top: 15%;
         }
        
-
     }
 } 
 
@@ -111,8 +112,32 @@ p{
     text-align: center;
     background: rgb(49, 49, 49);
     color: white;
+    width: 100%;
+    height: max-content;
 
     .container{
         padding-top: 10%;
+    }
+}
+
+//footer start here
+footer{
+    background: rgb(24, 24, 24);
+    color: white;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+
+
+    .container{
+        padding-top: 5%;
+        img{
+            max-width: 100%;
+            width: 30%;
+            height: auto; 
+        }
+        h3{
+            padding-top: 5%;
+        }
     }
 }
