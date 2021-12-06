@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700");
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +8,33 @@
 
 body {
   font-family: 'Ibarra Real Nova', serif;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2em;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-top: 3%;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 600;
+  padding-top: 2%;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-size: 0.9em;
+  font-weight: 500;
+  padding-top: 2%;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding-top: 3%;
+  line-height: 1.7em;
 }
 
 .navbar .container {
@@ -20,11 +45,61 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 3% 0;
+  padding: 0 5%;
 }
 
 .navbar .container .logo {
   width: 30%;
   height: auto;
+}
+
+.navbar .container ul {
+  padding-top: 3%;
+}
+
+.navbar .container ul li a {
+  padding: 3%;
+}
+
+.hero-sec {
+  background: #000;
+  color: white;
+  padding: 5% 3%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}
+
+.hero-sec .hero-title {
+  text-align: center;
+}
+
+.hero-sec .hero-title span {
+  background: green;
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 2%;
+}
+
+.hero-sec .hero-title a {
+  background: green;
+  color: white;
+  font-weight: 500;
+  padding: 2%;
+}
+
+.service {
+  padding: 5% 3%;
+  text-align: center;
+  background: #012b00;
+  color: white;
+}
+
+.service .container img {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  padding-top: 10%;
 }
 /*# sourceMappingURL=main.css.map */
