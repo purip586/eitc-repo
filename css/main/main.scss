@@ -139,5 +139,16 @@ footer{
         h3{
             padding-top: 5%;
         }
+        ul{
+            list-style: none;
+
+            li{
+                i{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+        }
     }
 }
