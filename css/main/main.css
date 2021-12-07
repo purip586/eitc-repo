@@ -62,7 +62,7 @@ p {
 }
 
 .hero-sec {
-  background: #001800;
+  background: #002400;
   color: white;
   padding: 10% 5%;
   height: -webkit-max-content;
@@ -79,7 +79,7 @@ p {
   background: green;
   font-size: 0.7em;
   font-weight: 300;
-  padding: 2%;
+  padding: 1% 3%;
 }
 
 .hero-sec .hero-title a {
