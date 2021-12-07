@@ -62,7 +62,7 @@ p {
 }
 
 .hero-sec {
-  background: #000;
+  background: #001800;
   color: white;
   padding: 10% 5%;
   height: -webkit-max-content;
@@ -150,20 +150,18 @@ footer .container h3 {
   padding-top: 5%;
 }
 
-footer .container ul {
+footer .container li {
   list-style: none;
 }
 
-footer .container ul li i {
+footer .container ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10%;
 }
 /*# sourceMappingURL=main.css.map */

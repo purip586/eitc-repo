@@ -60,7 +60,7 @@ p{
 
 //hero section
 .hero-sec{
-    background: #000;
+    background: rgb(0, 24, 0);
     color: white;
     padding: 10% 5%;
     height: max-content;
@@ -139,16 +139,15 @@ footer{
         h3{
             padding-top: 5%;
         }
+        li{
+            list-style: none;
+        }
         ul{
             list-style: none;
-
-            li{
-                i{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                }
-            }
+            display: flex;
+            justify-content: center;
+            padding: 0 10%;
         }
+
     }
 }
