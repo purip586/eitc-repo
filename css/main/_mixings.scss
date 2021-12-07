@@ -1,0 +1,36 @@
+//media start here
+@mixin breakpoint($point) {
+
+    //phone
+    @if $point == mobile {
+        @media screen and (min-width: 320px) {
+            @content;
+        }
+    }
+
+    //tablet
+    @else if $point == tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+        }
+    }
+
+    //laptop
+    @else if $point == laptop {
+    @media screen and (min-width: 1024px) {
+        @content;
+        }
+    }
+
+    //desktop
+    @else if $point == desktop {
+        @media screen and (min-width: 1200px) {
+            @content;
+            }
+        }
+
+
+}
+
+
+
