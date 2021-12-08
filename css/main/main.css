@@ -83,6 +83,8 @@ p {
 
 .hero-sec .hero-title {
   text-align: center;
+  display: -ms-grid;
+  display: grid;
 }
 
 .hero-sec .hero-title span {
@@ -102,18 +104,27 @@ p {
 
 @media screen and (min-width: 768px) {
   .hero-sec .hero-title {
+    -ms-grid-column: 1fr 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     text-align: left;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero-sec .hero-title {
+    -ms-grid-column: 1fr 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     text-align: left;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-sec .hero-title {
+    -ms-grid-column: 1fr 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     text-align: left;
   }
 }
