@@ -159,6 +159,8 @@ p {
 
 .testimonials .container {
   padding-top: 10%;
+  display: -ms-grid;
+  display: grid;
 }
 
 footer {
