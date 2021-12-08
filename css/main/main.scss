@@ -68,7 +68,7 @@ p{
 .hero-sec{
     background: rgb(0, 0, 0);
     color: white;
-    padding: 10% 5%;
+    padding: 20% 5% 5% 5%;
     height: 100%;
     width: 100%;
     position: relative;
@@ -101,6 +101,19 @@ p{
             margin-top: 5%;
             padding: 2%;
         }
+        @include breakpoint(mobile){
+        
+        }
+        @include breakpoint(tablet){
+            text-align: left;
+        }
+        @include breakpoint(laptop){
+            text-align: left;
+        }
+        @include breakpoint(desktop){
+            text-align: left;
+        }
+    
     }
 }
 

@@ -64,7 +64,7 @@ p {
 .hero-sec {
   background: black;
   color: white;
-  padding: 10% 5%;
+  padding: 20% 5% 5% 5%;
   height: 100%;
   width: 100%;
   position: relative;
@@ -98,6 +98,24 @@ p {
   font-weight: 500;
   margin-top: 5%;
   padding: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-sec .hero-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-sec .hero-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-sec .hero-title {
+    text-align: left;
+  }
 }
 
 .service {
