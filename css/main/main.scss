@@ -66,14 +66,27 @@ p{
 
 //hero section
 .hero-sec{
-    background: rgb(0, 36, 0);
+    background: rgb(0, 0, 0);
     color: white;
     padding: 10% 5%;
-    height: max-content;
+    height: 100%;
     width: 100%;
+    position: relative;
+
+    .overlay-image{
+        background-size: cover;
+        background-position: center;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
     .hero-title{
         text-align: center;
+
         span{
             background: green;
             font-size: 0.8em;

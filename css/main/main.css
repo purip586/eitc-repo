@@ -62,13 +62,23 @@ p {
 }
 
 .hero-sec {
-  background: #002400;
+  background: black;
   color: white;
   padding: 10% 5%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 100%;
   width: 100%;
+  position: relative;
+}
+
+.hero-sec .overlay-image {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .hero-sec .hero-title {
