@@ -12,7 +12,7 @@ body {
 
 h1 {
   font-size: 1.5em;
-  font-weight: 800;
+  font-weight: 700;
   padding-top: 3%;
 }
 
@@ -107,6 +107,10 @@ p {
   display: grid;
 }
 
+.service .container .info {
+  padding: 0 3%;
+}
+
 .service .container img {
   max-width: 100%;
   width: 50%;
@@ -161,6 +165,42 @@ p {
   padding-top: 10%;
   display: -ms-grid;
   display: grid;
+}
+
+.testimonials .container .container-msg {
+  padding: 0 3%;
+}
+
+@media screen and (min-width: 320px) {
+  .testimonials .container {
+    -ms-grid-column: 1fr;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials .container {
+    -ms-grid-column: 1fr 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials .container {
+    -ms-grid-column: 1fr 1fr 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials .container {
+    -ms-grid-column: 1fr 1fr 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 footer {
