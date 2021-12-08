@@ -111,11 +111,22 @@ p{
             height: auto;
             padding-top: 15%;
         }
+        @include breakpoint(mobile){
+            -ms-grid-column: 1fr;
+            grid-template-columns: repeat(1, 1fr);
+        }
         @include breakpoint(tablet){
             -ms-grid-column: 1fr 1fr;
             grid-template-columns: repeat(2, 1fr);
         }
-
+        @include breakpoint(laptop){
+            -ms-grid-column: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include breakpoint(desktop){
+            -ms-grid-column: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
 } 
