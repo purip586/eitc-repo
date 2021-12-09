@@ -42,12 +42,23 @@ p{
 }
 
 //navbar
-
 .navbar{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
        .container{
         display: flex;
         flex-direction: row;
         padding: 0 5%;
+
+        .nav-link{
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            padding-inline: 10px;
+        }
 
         .logo{
             max-width: 100%;
@@ -67,7 +78,7 @@ p{
                 height: auto;
             }
             @include breakpoint(desktop){
-                width: 150px;
+                width: 100px;
                 height: auto;
             }
 
@@ -85,7 +96,7 @@ p{
 
 //hero section
 .hero-sec{
-    background: rgb(0, 0, 0);
+    background: rgb(7, 61, 0);
     color: white;
     padding: 20% 5% 5% 5%;
     height: 100%;
@@ -95,7 +106,7 @@ p{
     .overlay-image{
         background-size: cover;
         background-position: center;
-        opacity: 0.2;
+        opacity: 0.3;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -148,7 +159,7 @@ p{
 .service{
     padding: 5% 3%;
     text-align: center;
-    background: rgb(1, 46, 0);
+    background: rgb(1, 59, 0);
     color: white;
     width: 100%;
     height: max-content;
