@@ -1,40 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-  font-size: 1.5em;
-  font-weight: 800;
-  padding-top: 3%;
-}
-
-h2 {
-  font-size: 1.1em;
-  font-weight: 600;
-  padding-top: 3%;
-  line-height: 1.5em;
-}
-
-h3 {
-  font-size: 1em;
-  font-weight: 500;
-  padding-top: 1%;
-  line-height: 1.5em;
-}
-
-p {
-  font-size: 0.8em;
-  font-weight: 400;
-  padding-top: 4%;
-  line-height: 1.9em;
 }
 
 .navbar {
@@ -120,16 +91,16 @@ p {
   background: #073d00;
   color: white;
   padding: 20% 5% 5% 5%;
-  height: 100%;
   width: 100%;
+  height: auto;
   position: relative;
 }
 
 .hero-sec .overlay-image {
   background-size: cover;
   background-position: center;
-  height: 100%;
   width: 100%;
+  height: auto;
   max-width: 100%;
   opacity: 0.3;
   position: absolute;
