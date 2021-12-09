@@ -50,8 +50,27 @@ p{
         padding: 0 5%;
 
         .logo{
-            width: 30%;
+            max-width: 100%;
+            width: 60px;
             height: auto;
+
+            @include breakpoint(mobile){
+                width: 60px;
+                height: auto;
+            }
+            @include breakpoint(tablet){
+                width: 80px;
+                height: auto;
+            }
+            @include breakpoint(laptop){
+                width: 100px;
+                height: auto;
+            }
+            @include breakpoint(desktop){
+                width: 150px;
+                height: auto;
+            }
+
         }
         
         ul{
