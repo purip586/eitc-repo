@@ -45,6 +45,18 @@ p {
   z-index: 1000;
 }
 
+@media screen and (min-width: 1024px) {
+  .navbar {
+    background: none !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    background: none !important;
+  }
+}
+
 .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,11 +65,11 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 0 5%;
+  padding: 0 3%;
 }
 
 .navbar .container .nav-link {
-  color: black;
+  color: white;
   font-weight: 500;
   padding-inline: 10px;
 }

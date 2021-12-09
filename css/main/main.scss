@@ -49,13 +49,20 @@ p{
     top: 0;
     z-index: 1000;
 
+    @include breakpoint(laptop){
+        background: none !important;
+    }
+    @include breakpoint(desktop){
+        background: none !important;
+    }
+
        .container{
         display: flex;
         flex-direction: row;
-        padding: 0 5%;
+        padding: 0 3%;
 
         .nav-link{
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             font-weight: 500;
             padding-inline: 10px;
         }
