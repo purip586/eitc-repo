@@ -12,7 +12,7 @@ body {
 
 h1 {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 800;
   padding-top: 3%;
 }
 
@@ -116,6 +116,9 @@ p {
 .hero-sec .overlay-image {
   background-size: cover;
   background-position: center;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
   opacity: 0.3;
   position: absolute;
   top: 0;
@@ -170,6 +173,11 @@ p {
         grid-template-columns: repeat(2, 1fr);
     text-align: left;
   }
+}
+
+.company-overview {
+  text-align: center;
+  padding: 0 10%;
 }
 
 .service {

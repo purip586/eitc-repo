@@ -19,7 +19,7 @@ body{
 // typography
 h1{
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 800;
     padding-top: 3%;
 }
 h2{
@@ -106,6 +106,9 @@ p{
     .overlay-image{
         background-size: cover;
         background-position: center;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
         opacity: 0.3;
         position: absolute;
         top: 0;
@@ -153,6 +156,12 @@ p{
     
     }
 }
+
+ //company-overview section start
+ .company-overview{
+     text-align: center;
+     padding: 0 10%;
+ }
 
     //service section start
 
