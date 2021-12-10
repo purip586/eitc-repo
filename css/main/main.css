@@ -95,6 +95,12 @@
   position: relative;
 }
 
+@media screen and (min-width: 320px) {
+  .hero-sec {
+    background-image: url(/img/mbl.jpg);
+  }
+}
+
 .hero-sec .overlay-image {
   background-size: cover;
   background-position: center;

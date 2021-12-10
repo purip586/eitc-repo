@@ -126,6 +126,10 @@ $font-size-h6: 1rem;
     height: auto;
     position: relative;
 
+    @include breakpoint(mobile){
+        background-image: url(/img/mbl.jpg);
+    }
+
     .overlay-image{
         background-size: cover;
         background-position: center;
