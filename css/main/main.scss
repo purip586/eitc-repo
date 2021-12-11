@@ -58,11 +58,9 @@ $font-size-h5: 1.25rem;
 $font-size-h6: 1rem;
 
 //spacing
-
 h1, h2, h3, h4, h5, h6, p {
-    // padding-top: 5%;
     line-height: 1.5;
-    padding: 5%;
+    padding: 3%;
 }
 
 
@@ -95,7 +93,7 @@ h1, h2, h3, h4, h5, h6, p {
         .nav-link{
             color: rgb(255, 255, 255);
             font-weight: 500;
-            padding-inline: 10px;
+            // padding: 1%;
         }
 
         .logo{
@@ -122,13 +120,10 @@ h1, h2, h3, h4, h5, h6, p {
 
         }
         
-        ul{
-            padding-top: 3%;
-
         li a{
-            padding: 3%; 
+            padding: 3% 5%;
         }  
-        }
+
     }
 }
 
@@ -162,7 +157,6 @@ h1, h2, h3, h4, h5, h6, p {
         position: relative;
 
         h1{
-            padding: 1% 0;
             font-weight: 700;
         }
         
