@@ -8,6 +8,11 @@
           box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.5;
+  padding: 5%;
+}
+
 .navbar {
   overflow: hidden;
   position: absolute;
