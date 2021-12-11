@@ -10,7 +10,7 @@
 
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
-  padding: 3%;
+  padding: 2%;
 }
 
 .navbar {
@@ -103,7 +103,6 @@ h1, h2, h3, h4, h5, h6, p {
 .hero-sec {
   background: black;
   color: white;
-  padding: 20% 5% 5% 5%;
   width: 100%;
   height: auto;
   position: relative;
@@ -128,6 +127,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: -ms-grid;
   display: grid;
   position: relative;
+  padding: 20% 5% 3% 3%;
 }
 
 .hero-sec .hero-title h1 {
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
-  margin-top: 5%;
+  margin-top: 3%;
   padding: 2%;
 }
 

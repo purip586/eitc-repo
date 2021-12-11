@@ -60,7 +60,7 @@ $font-size-h6: 1rem;
 //spacing
 h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
-    padding: 3%;
+    padding: 2%;
 }
 
 
@@ -131,7 +131,6 @@ h1, h2, h3, h4, h5, h6, p {
 .hero-sec{
     background: rgb(0, 0, 0);
     color: white;
-    padding: 20% 5% 5% 5%;
     width: 100%;
     height: auto;
     position: relative;
@@ -155,6 +154,7 @@ h1, h2, h3, h4, h5, h6, p {
         text-align: center;
         display: grid;
         position: relative;
+        padding: 20% 5% 3% 3%;
 
         h1{
             font-weight: 700;
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6, p {
             color: white;
             font-weight: bold;
             font-size: 1.3rem;
-            margin-top: 5%;
+            margin-top: 3%;
             padding: 2%;
         }
         @include breakpoint(mobile){
