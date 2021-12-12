@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     el_autohide = document.querySelector('.autohide');
     
-    // add padding-top to body (if necessary)
     navbar_height = document.querySelector('.navbar').offsetHeight;
   
     if(el_autohide){
