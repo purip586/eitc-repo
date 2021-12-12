@@ -196,6 +196,15 @@ h6, p {line-height: 1.5;}
  .company-overview{
      text-align: center;
      padding: 10% 10%;
+     background: #000;
+     color: white;
+
+     @include breakpoint(laptop){
+        h6{font-size: 1.2rem;}
+    }
+    @include breakpoint(desktop){
+        h6{font-size: 1.3rem;}
+    }
  }
 
  //service section start

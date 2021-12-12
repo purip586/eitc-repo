@@ -181,6 +181,20 @@ h6, p {
 .company-overview {
   text-align: center;
   padding: 10% 10%;
+  background: #000;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .company-overview h6 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company-overview h6 {
+    font-size: 1.3rem;
+  }
 }
 
 .service {
