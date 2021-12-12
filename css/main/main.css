@@ -143,6 +143,10 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 2%;
 }
 
+.hero-sec .hero-title a:hover {
+  background-color: #004905;
+}
+
 @media screen and (min-width: 768px) {
   .hero-sec .hero-title {
     -ms-grid-column: 1fr 1fr;
