@@ -138,6 +138,39 @@ h6, p {
   font-weight: 700;
 }
 
+.hero-sec .hero-title h2 {
+  position: relative;
+  font-family: 'source code pro', monospace;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-sec .hero-title #typewriter:after {
+  content: "_";
+  -webkit-animation: blink 500ms linear infinite alternate;
+          animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero-sec .hero-title a {
   background: #1d9200;
   color: white;
