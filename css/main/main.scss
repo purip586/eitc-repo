@@ -77,26 +77,26 @@ h6, p {line-height: 1.5;}
             font-size: 1.3rem;
         }
 
-        .logo{
+        .logo img{
             max-width: 100%;
-            width: 60px;
             height: auto;
-            margin: .5rem;
+            margin-top: .5rem;
+            margin-left: 1rem;
 
             @include breakpoint(mobile){
-                width: 60px;
+                width: 25%;
                 height: auto;
             }
             @include breakpoint(tablet){
-                width: 80px;
+                width: 30%;
                 height: auto;
             }
             @include breakpoint(laptop){
-                width: 100px;
+                width: 30%;
                 height: auto;
             }
             @include breakpoint(desktop){
-                width: 130px;
+                width: 30%;
                 height: auto;
             }
 
@@ -139,7 +139,7 @@ h6, p {line-height: 1.5;}
         text-align: center;
         position: absolute;
         top: 30vh;
-        margin: 1rem;
+        margin-left: 1.3rem;
 
         h2 {
             position: relative;
@@ -235,7 +235,7 @@ h6, p {line-height: 1.5;}
             box-shadow: darkgreen 0 1.5rem 1.5rem 0;
 
             &:hover{
-                background: #000;
+                transform: scale(1.05);
             }
         }
 
