@@ -148,7 +148,7 @@ h6, p {
   padding: 0.7rem 1rem;
 }
 .hero-sec .hero-title .btn:hover {
-  background-color: #004905;
+  background-color: #3c8600;
 }
 @media screen and (min-width: 320px) {
   .hero-sec .hero-title .btn {
