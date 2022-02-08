@@ -7,7 +7,13 @@
   transition: 0.5s all;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   padding-top: 1rem;
 }
 
@@ -20,69 +26,77 @@ h6, p {
   line-height: 1.5;
 }
 
-.navbar {
-  overflow: hidden;
+nav {
   position: absolute;
   width: 100%;
   top: 0;
   z-index: 1000;
   padding: 0.5rem;
+  display: flex;
 }
-.navbar .scrolled-down {
+nav .scrolled-down {
   transform: translateY(-100%);
   transition: all 0.3s ease-in-out;
 }
-.navbar .scrolled-up {
+nav .scrolled-up {
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
 }
 @media screen and (min-width: 1024px) {
-  .navbar {
-    background: none !important;
+  nav {
+    background: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .navbar {
-    background: none !important;
+  nav {
+    background: none;
   }
 }
-.navbar .nav-link {
-  color: white;
-  font-weight: 500;
-  font-size: 1.3rem;
-}
-.navbar .logo img {
+nav .logo img {
   max-width: 100%;
   height: auto;
   margin-top: 0.5rem;
   margin-left: 1rem;
 }
 @media screen and (min-width: 320px) {
-  .navbar .logo img {
-    width: 25%;
+  nav .logo img {
+    width: 20%;
     height: auto;
   }
 }
 @media screen and (min-width: 768px) {
-  .navbar .logo img {
+  nav .logo img {
     width: 30%;
     height: auto;
   }
 }
 @media screen and (min-width: 1024px) {
-  .navbar .logo img {
+  nav .logo img {
     width: 30%;
     height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  .navbar .logo img {
+  nav .logo img {
     width: 30%;
     height: auto;
   }
 }
-.navbar li a {
-  padding: 3% 5%;
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+nav ul li a {
+  padding: 0 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #91D300;
 }
 
 .hero-sec {
@@ -114,8 +128,8 @@ h6, p {
 .hero-sec .hero-title {
   text-align: center;
   position: absolute;
-  top: 30vh;
-  margin-left: 1.3rem;
+  top: 40vh;
+  margin-left: 1rem;
 }
 .hero-sec .hero-title h2 {
   position: relative;
@@ -146,6 +160,7 @@ h6, p {
   text-decoration: none;
   border: none;
   padding: 0.7rem 1rem;
+  cursor: pointer;
 }
 .hero-sec .hero-title .btn:hover {
   background-color: #3c8600;

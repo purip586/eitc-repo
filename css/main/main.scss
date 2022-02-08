@@ -2,7 +2,7 @@
 @import '_mixings.scss';
 
 //html
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,85 +38,113 @@ Consolas,
 monospace;
 
 //spacing
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     padding-top: 1rem;
 }
-h1{
+
+h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
 }
 
-h6, p {line-height: 1.5;}
+h6, p {
+    line-height: 1.5;
+}
 
 //navbar
-.navbar {
-    overflow: hidden;
+nav {
     position: absolute;
     width: 100%;
     top: 0;
     z-index: 1000;
     padding: .5rem;
+    display: flex;
 
-    .scrolled-down{
-        transform:translateY(-100%); transition: all 0.3s ease-in-out;
-      }
-      .scrolled-up{
-        transform:translateY(0); transition: all 0.3s ease-in-out;
-      }
-
-    @include breakpoint(laptop){
-        background: none !important;
-    }
-    @include breakpoint(desktop){
-        background: none !important;
+    .scrolled-down {
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
     }
 
-        .nav-link{
-            color: rgb(255, 255, 255);
-            font-weight: 500;
-            font-size: 1.3rem;
-        }
+    .scrolled-up {
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
 
-        .logo img{
-            max-width: 100%;
+    @include breakpoint(laptop) {
+        background: none;
+    }
+
+    @include breakpoint(desktop) {
+        background: none;
+    }
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+        margin-top: .5rem;
+        margin-left: 1rem;
+
+        @include breakpoint(mobile) {
+            width: 20%;
             height: auto;
-            margin-top: .5rem;
-            margin-left: 1rem;
-
-            @include breakpoint(mobile){
-                width: 25%;
-                height: auto;
-            }
-            @include breakpoint(tablet){
-                width: 30%;
-                height: auto;
-            }
-            @include breakpoint(laptop){
-                width: 30%;
-                height: auto;
-            }
-            @include breakpoint(desktop){
-                width: 30%;
-                height: auto;
-            }
-
         }
-        
-        li a{
-            padding: 3% 5%;
-        }  
 
+        @include breakpoint(tablet) {
+            width: 30%;
+            height: auto;
+        }
+
+        @include breakpoint(laptop) {
+            width: 30%;
+            height: auto;
+        }
+
+        @include breakpoint(desktop) {
+            width: 30%;
+            height: auto;
+        }
     }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+        li{
+            a{
+                padding: 0 1rem;
+                color: white;
+                font-weight: 500;
+                font-size: 1.3rem;
+                text-decoration: none;
+
+                &:hover{
+                    color: #91D300;
+                }
+            }
+        }
+    }
+
+}
+
+
 
 //hero section
-.hero-sec{
+.hero-sec {
     background: rgb(0, 0, 0);
     color: white;
     width: 100%;
     height: 100vh;
     position: relative;
 
-    .overlay-image{
+    .overlay-image {
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -130,16 +158,16 @@ h6, p {line-height: 1.5;}
         left: 0;
         right: 0;
 
-        @include breakpoint(mobile){
+        @include breakpoint(mobile) {
             background-position: left;
         }
     }
 
-    .hero-title{
+    .hero-title {
         text-align: center;
         position: absolute;
-        top: 30vh;
-        margin-left: 1.3rem;
+        top: 40vh;
+        margin-left: 1rem;
 
         h2 {
             position: relative;
@@ -152,17 +180,23 @@ h6, p {line-height: 1.5;}
         }
 
         #typewriter {
-            &:after{
-              content: "_";
-              animation: blink 500ms linear infinite alternate;
+            &:after {
+                content: "_";
+                animation: blink 500ms linear infinite alternate;
             }
         }
-        @keyframes blink{
-          0%{opacity: 0;}
-          100%{opacity: 1;}
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
-        .btn{
+        .btn {
             background: #91D300;
             color: rgb(0, 0, 0);
             font-weight: bold;
@@ -170,103 +204,114 @@ h6, p {line-height: 1.5;}
             text-decoration: none;
             border: none;
             padding: .7rem 1rem;
+            cursor: pointer;
 
-            &:hover{
-            background-color: rgb(60, 134, 0);
+            &:hover {
+                background-color: rgb(60, 134, 0);
             }
 
-            @include breakpoint(mobile){
+            @include breakpoint(mobile) {
                 margin: 1rem auto;
             }
         }
-        
-        @include breakpoint(mobile){
 
-        }
-        @include breakpoint(tablet){
+        @include breakpoint(mobile) {}
+
+        @include breakpoint(tablet) {
             width: 60%;
             text-align: left;
         }
-        @include breakpoint(laptop){
+
+        @include breakpoint(laptop) {
             width: 50%;
             text-align: left;
         }
-        @include breakpoint(desktop){
+
+        @include breakpoint(desktop) {
             width: 50%;
             text-align: left;
         }
-    
+
     }
 }
 
- //company-overview section start
- .company-overview{
-     text-align: center;
-     padding: 10% 10%;
-     background: #000;
-     color: white;
-     position: relative;
+//company-overview section start
+.company-overview {
+    text-align: center;
+    padding: 10% 10%;
+    background: #000;
+    color: white;
+    position: relative;
 
-     @include breakpoint(laptop){
-        h6{font-size: 1.2rem;}
+    @include breakpoint(laptop) {
+        h6 {
+            font-size: 1.2rem;
+        }
     }
-    @include breakpoint(desktop){
-        h6{font-size: 1.3rem;}
-    }
- }
 
- //service section start
-.service{
+    @include breakpoint(desktop) {
+        h6 {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+//service section start
+.service {
     padding: 5% 3%;
     text-align: center;
     background: rgb(29, 146, 0);
     color: white;
     max-width: 100%;
     height: max-content;
-    
-    .container{
+
+    .container {
         padding-top: 10%;
         display: grid;
         gap: 2.5rem;
 
-        .info{
+        .info {
             padding: 10%;
             background: rgb(62, 156, 0);
             box-shadow: darkgreen 0 1.5rem 1.5rem 0;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.05);
             }
         }
 
-        img{
+        img {
             max-width: 100%;
             width: 50%;
             height: auto;
             // padding-top: 15%;
         }
-        @include breakpoint(mobile){
+
+        @include breakpoint(mobile) {
             -ms-grid-column: 1fr;
             grid-template-columns: repeat(1, 1fr);
         }
-        @include breakpoint(tablet){
+
+        @include breakpoint(tablet) {
             -ms-grid-column: 1fr 1fr;
             grid-template-columns: repeat(2, 1fr);
         }
-        @include breakpoint(laptop){
+
+        @include breakpoint(laptop) {
             -ms-grid-column: 1fr 1fr;
             grid-template-columns: repeat(2, 1fr);
         }
-        @include breakpoint(desktop){
+
+        @include breakpoint(desktop) {
             -ms-grid-column: 1fr 1fr;
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
-} 
+}
 
 //testimonials start here
-.testimonials{
+.testimonials {
     padding: 5% 3%;
     text-align: center;
     background: rgb(49, 49, 49);
@@ -274,27 +319,30 @@ h6, p {line-height: 1.5;}
     width: 100%;
     height: max-content;
 
-    .container{
+    .container {
         padding-top: 10%;
         display: grid;
 
-        .container-msg{
+        .container-msg {
             padding: 0 3%;
         }
 
-        @include breakpoint(mobile){
+        @include breakpoint(mobile) {
             -ms-grid-column: 1fr;
             grid-template-columns: repeat(1, 1fr);
         }
-        @include breakpoint(tablet){
+
+        @include breakpoint(tablet) {
             -ms-grid-column: 1fr 1fr;
             grid-template-columns: repeat(2, 1fr);
         }
-        @include breakpoint(laptop){
+
+        @include breakpoint(laptop) {
             -ms-grid-column: 1fr 1fr 1fr;
             grid-template-columns: repeat(3, 1fr);
         }
-        @include breakpoint(desktop){
+
+        @include breakpoint(desktop) {
             -ms-grid-column: 1fr 1fr 1fr;
             grid-template-columns: repeat(3, 1fr);
         }
@@ -302,7 +350,7 @@ h6, p {line-height: 1.5;}
 }
 
 //footer start here
-footer{
+footer {
     background: rgb(24, 24, 24);
     color: white;
     width: 100%;
@@ -310,41 +358,47 @@ footer{
     text-align: center;
 
 
-    .container{
+    .container {
         padding-top: 5%;
         display: grid;
 
-        img{
+        img {
             max-width: 100%;
             width: 30%;
-            height: auto; 
+            height: auto;
         }
-        h5{
+
+        h5 {
             padding-top: 5%;
         }
-        li{
+
+        li {
             list-style: none;
         }
-        ul{
+
+        ul {
             list-style: none;
             display: flex;
             justify-content: center;
             padding: 0 10%;
         }
-    
-        @include breakpoint(mobile){
+
+        @include breakpoint(mobile) {
             -ms-grid-column: 1fr;
             grid-template-columns: repeat(1, 1fr);
         }
-        @include breakpoint(tablet){
+
+        @include breakpoint(tablet) {
             -ms-grid-column: 1fr 1fr;
             grid-template-columns: repeat(2, 1fr);
         }
-        @include breakpoint(laptop){
+
+        @include breakpoint(laptop) {
             -ms-grid-column: 1fr 1fr 1fr;
             grid-template-columns: repeat(3, 1fr);
         }
-        @include breakpoint(desktop){
+
+        @include breakpoint(desktop) {
             -ms-grid-column: 1fr 1fr 1fr;
             grid-template-columns: repeat(3, 1fr);
         }
