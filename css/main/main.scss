@@ -11,12 +11,10 @@
 }
 
 // typography
-//google fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic");
 
 // font families
-
 $font-family-sans-serif: -apple-system,
 system-ui,
 BlinkMacSystemFont,
@@ -25,11 +23,6 @@ Roboto,
 "Helvetica Neue",
 Arial,
 sans-serif !default;
-
-$font-family-serif: Georgia,
-"Times New Roman",
-Times,
-serif !default;
 
 $font-family-monospace: Menlo,
 Monaco,
