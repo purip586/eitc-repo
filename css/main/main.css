@@ -34,12 +34,14 @@ h3 {
   font-weight: 600;
 }
 
-h4, h5 {
+h4,
+h5 {
   font-size: clamp(0.9rem, 5vw, 1.2rem);
   font-weight: 500;
 }
 
-h6, p {
+h6,
+p {
   line-height: 1.5;
   font-size: clamp(0.9rem, 5vw, 1.2rem);
   font-weight: 500;
@@ -414,13 +416,13 @@ nav ul li a:hover {
 }
 
 .wrapper {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.box div {
+.wrapper .box div {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -428,91 +430,91 @@ nav ul li a:hover {
   opacity: 0.5;
 }
 
-.box div:nth-child(1) {
+.wrapper .box div:nth-child(1) {
   top: 12%;
   left: 42%;
   -webkit-animation: animate 10s linear infinite;
           animation: animate 10s linear infinite;
 }
 
-.box div:nth-child(2) {
+.wrapper .box div:nth-child(2) {
   top: 70%;
   left: 50%;
   -webkit-animation: animate 7s linear infinite;
           animation: animate 7s linear infinite;
 }
 
-.box div:nth-child(3) {
+.wrapper .box div:nth-child(3) {
   top: 17%;
   left: 6%;
   -webkit-animation: animate 9s linear infinite;
           animation: animate 9s linear infinite;
 }
 
-.box div:nth-child(4) {
+.wrapper .box div:nth-child(4) {
   top: 20%;
   left: 60%;
   -webkit-animation: animate 10s linear infinite;
           animation: animate 10s linear infinite;
 }
 
-.box div:nth-child(5) {
+.wrapper .box div:nth-child(5) {
   top: 67%;
   left: 10%;
   -webkit-animation: animate 6s linear infinite;
           animation: animate 6s linear infinite;
 }
 
-.box div:nth-child(6) {
+.wrapper .box div:nth-child(6) {
   top: 80%;
   left: 70%;
   -webkit-animation: animate 12s linear infinite;
           animation: animate 12s linear infinite;
 }
 
-.box div:nth-child(7) {
+.wrapper .box div:nth-child(7) {
   top: 60%;
   left: 80%;
   -webkit-animation: animate 15s linear infinite;
           animation: animate 15s linear infinite;
 }
 
-.box div:nth-child(8) {
+.wrapper .box div:nth-child(8) {
   top: 32%;
   left: 25%;
   -webkit-animation: animate 16s linear infinite;
           animation: animate 16s linear infinite;
 }
 
-.box div:nth-child(9) {
+.wrapper .box div:nth-child(9) {
   top: 90%;
   left: 25%;
   -webkit-animation: animate 9s linear infinite;
           animation: animate 9s linear infinite;
 }
 
-.box div:nth-child(10) {
+.wrapper .box div:nth-child(10) {
   top: 20%;
   left: 80%;
   -webkit-animation: animate 5s linear infinite;
           animation: animate 5s linear infinite;
 }
 
-.box div:nth-child(11) {
+.wrapper .box div:nth-child(11) {
   top: 30%;
   left: 40%;
   -webkit-animation: animate 7s linear infinite;
           animation: animate 7s linear infinite;
 }
 
-.box div:nth-child(12) {
+.wrapper .box div:nth-child(12) {
   top: 27%;
   left: 16%;
   -webkit-animation: animate 9s linear infinite;
           animation: animate 9s linear infinite;
 }
 
-.box div:nth-child(13) {
+.wrapper .box div:nth-child(13) {
   top: 40%;
   left: 80%;
   -webkit-animation: animate 5s linear infinite;
@@ -545,18 +547,18 @@ nav ul li a:hover {
   }
 }
 
-.contact-us {
+.wrapper #contact-us {
   min-height: 90vh;
 }
 
-.contact-us h2 {
+.wrapper #contact-us h2 {
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
   padding-top: 5rem;
 }
 
-.contact-us-form {
+.wrapper #contact-us .contact-us-form {
   margin: 5rem 2rem;
   display: -ms-grid;
   display: grid;
@@ -568,24 +570,27 @@ nav ul li a:hover {
           justify-content: center;
 }
 
-.contact-us-form input, textarea {
+.wrapper #contact-us .contact-us-form input,
+.wrapper #contact-us .contact-us-form textarea {
   padding: 1rem;
   border: none;
   outline: none;
   border-bottom: #269b02 2px solid;
 }
 
-.contact-us-form input[type=submit] {
+.wrapper #contact-us .contact-us-form input[type=submit] {
   border: none;
 }
 
-.button {
+.wrapper #contact-us .contact-us-form .button {
   margin-top: 1rem;
   cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
-.button:hover {
-  background: #dddddd;
+.wrapper #contact-us .contact-us-form .button:hover {
+  background: #91D300;
 }
 
 footer {
