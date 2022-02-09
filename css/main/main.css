@@ -7,6 +7,7 @@
   -webkit-transition: .5s all;
   transition: .5s all;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 h1,
@@ -549,7 +550,7 @@ nav .bar {
 }
 
 .wrapper #contact-us .contact-us-form {
-  margin: 5rem 2rem;
+  margin: 6rem 1rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;

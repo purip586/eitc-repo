@@ -8,6 +8,7 @@
     box-sizing: border-box;
     transition: .5s all;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 // typography
@@ -498,7 +499,7 @@ nav {
         }
 
         .contact-us-form {
-            margin: 5rem 2rem;
+            margin: 6rem 1rem;
             display: grid;
             align-items: center;
             justify-content: center;
