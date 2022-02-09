@@ -495,7 +495,7 @@ nav {
 
 
     #contact-us {
-        min-height: 90vh;
+        min-height: 100vh;
 
         h2 {
             text-transform: uppercase;
@@ -551,25 +551,52 @@ footer {
         padding-top: 5%;
         display: grid;
 
-        img {
-            max-width: 100%;
-            width: 30%;
-            height: auto;
+        .footer-info {
+            img {
+                max-width: 100%;
+                width: 30%;
+                height: auto;
+            }
         }
 
-        h5 {
-            padding-top: 5%;
+        .footer-nav {
+            li {
+                list-style: none;
+                padding-top: 1.5rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        color: #91D300;
+                    }
+                }
+            }
         }
 
-        li {
-            list-style: none;
-        }
+        .footer-icon {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                padding: 0 10%;
 
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0 10%;
+                li {
+                    padding: 2rem 1rem;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.5rem;
+
+                        &:hover {
+                            color: #91D300;
+                        }
+                    }
+                }
+            }
         }
 
         @include breakpoint(mobile) {
@@ -592,5 +619,11 @@ footer {
             grid-template-columns: repeat(3, 1fr);
         }
 
+    }
+
+    .copyright {
+        border-top: 1px #91D300 solid;
+        margin-top: 3rem;
+        padding-bottom: .5rem;
     }
 }
