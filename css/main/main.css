@@ -400,6 +400,7 @@ nav ul li a:hover {
 #client {
   min-height: 50vh;
   background-color: #269b02;
+  color: white;
   text-align: center;
 }
 
@@ -412,6 +413,7 @@ nav ul li a:hover {
 #pricing {
   min-height: 50vh;
   background: #269b02;
+  color: white;
   text-align: center;
 }
 
