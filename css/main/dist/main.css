@@ -53,6 +53,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 nav .scrolled-down {
   transform: translateY(-100%);
@@ -78,6 +79,7 @@ nav .nav-menu {
   background-color: #000;
   text-align: center;
   transition: all 0.5s;
+  overflow: hidden;
 }
 nav .nav-menu .nav-item {
   list-style: none;

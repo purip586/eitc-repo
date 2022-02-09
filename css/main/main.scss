@@ -79,6 +79,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 
     .scrolled-down {
         transform: translateY(-100%);
@@ -107,6 +108,7 @@ nav {
         background-color: #000;
         text-align: center;
         transition: all .5s;
+        overflow: hidden;
 
 
         .nav-item {

@@ -61,6 +61,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 nav .scrolled-down {
@@ -100,6 +101,7 @@ nav .nav-menu {
   text-align: center;
   -webkit-transition: all .5s;
   transition: all .5s;
+  overflow: hidden;
 }
 
 nav .nav-menu .nav-item {
