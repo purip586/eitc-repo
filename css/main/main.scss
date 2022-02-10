@@ -79,6 +79,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 1.5rem;
 
     .scrolled-down {
         transform: translateY(-100%);
@@ -91,15 +92,13 @@ nav {
     }
 
     .logo img {
-        position: relative;
-        width: 25%;
-        margin: 1rem;
+        width: 30%;
     }
 
     .nav-menu {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 4rem;
         right: 0;
         min-width: 30%;
@@ -125,6 +124,20 @@ nav {
                 }
             }
         }
+
+        @include breakpoint(laptop) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: none;
+            transform: none;
+            position: relative;
+            top: auto;
+            right: auto;
+            width: auto;
+            height: auto;
+            gap: 2rem;
+        }
     }
 
     .active{
@@ -137,6 +150,10 @@ nav {
         color: white;
         font-size: 1.8rem;
         transition: all .5s;
+
+        @include breakpoint(laptop) {
+            display: none;
+        }
     }
 
 }

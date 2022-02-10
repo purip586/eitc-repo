@@ -53,6 +53,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 1.5rem;
 }
 nav .scrolled-down {
   transform: translateY(-100%);
@@ -63,14 +64,12 @@ nav .scrolled-up {
   transition: all 0.3s ease-in-out;
 }
 nav .logo img {
-  position: relative;
-  width: 25%;
-  margin: 1rem;
+  width: 30%;
 }
 nav .nav-menu {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 4rem;
   right: 0;
   min-width: 30%;
@@ -93,6 +92,21 @@ nav .nav-menu .nav-item .nav-link {
 nav .nav-menu .nav-item .nav-link:hover {
   color: #91D300;
 }
+@media screen and (min-width: 1024px) {
+  nav .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: none;
+    transform: none;
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    gap: 2rem;
+  }
+}
 nav .active {
   transform: translateX(0);
 }
@@ -102,6 +116,11 @@ nav .bar {
   color: white;
   font-size: 1.8rem;
   transition: all 0.5s;
+}
+@media screen and (min-width: 1024px) {
+  nav .bar {
+    display: none;
+  }
 }
 
 .hero-sec {
