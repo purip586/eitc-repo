@@ -22,11 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //navbar toggler 
-    const bar = document.querySelector(".bar");
+    const bars = document.querySelector(".bars");
     const navMenu = document.querySelector(".nav-menu");
 
-    bar.addEventListener("click", () => {
+    bars.addEventListener("click", (e) => {
         navMenu.classList.toggle('active');
+        bars.classList.toggle('active');
     })
 
 });

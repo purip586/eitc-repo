@@ -23,10 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
   } //navbar toggler 
 
 
-  var bar = document.querySelector(".bar");
+  var bars = document.querySelector(".bars");
   var navMenu = document.querySelector(".nav-menu");
-  bar.addEventListener("click", function () {
+  bars.addEventListener("click", function (e) {
     navMenu.classList.toggle('active');
+    bars.classList.toggle('active');
   });
 }); //subtitle typing animation
 

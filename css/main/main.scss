@@ -102,12 +102,11 @@ nav {
         position: fixed;
         top: 4.5rem;
         right: 0;
-        min-width: 30%;
+        min-width: 40%;
         height: 100vh;
         background-color: #000;
         text-align: center;
-        transition: all .5s;
-
+        transition: all .5s ease-in-out;
         transform: translateX(100%);
 
         .nav-item {
@@ -141,19 +140,35 @@ nav {
         }
     }
 
-    .active{
+    .nav-menu.active{
         transform: translateX(0);
     }
 
-    .bar {
+    .bars {
         cursor: pointer;
-        color: white;
-        font-size: 1.8rem;
-        transition: all .5s;
+        display: block;
+        .bar{
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: white;
+            transition: all .3s ease-in-out;
+        }
 
         @include breakpoint(laptop) {
             display: none;
         }
+    }
+
+    .bars.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .bars.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .bars.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
 }

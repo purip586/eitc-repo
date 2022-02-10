@@ -94,12 +94,12 @@ nav .nav-menu {
   position: fixed;
   top: 4.5rem;
   right: 0;
-  min-width: 30%;
+  min-width: 40%;
   height: 100vh;
   background-color: #000;
   text-align: center;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -144,23 +144,44 @@ nav .nav-menu .nav-item .nav-link:hover {
   }
 }
 
-nav .active {
+nav .nav-menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-nav .bar {
+nav .bars {
   cursor: pointer;
-  color: white;
-  font-size: 1.8rem;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  display: block;
+}
+
+nav .bars .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {
-  nav .bar {
+  nav .bars {
     display: none;
   }
+}
+
+nav .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+nav .bars.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+
+nav .bars.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
 }
 
 .hero-sec {
