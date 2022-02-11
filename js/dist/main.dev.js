@@ -29,6 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
     navMenu.classList.toggle('active');
     bars.classList.toggle('active');
   });
+  document.querySelectorAll('.nav-link').forEach(function (n) {
+    return n.addEventListener('click', function () {
+      bars.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
 }); //subtitle typing animation
 
 function setupTypewriter(t) {
