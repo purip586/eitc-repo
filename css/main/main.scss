@@ -92,8 +92,8 @@ nav {
     }
 
     .logo img {
-        min-width: 30%;
-        width: 30%;
+        width: 100px;
+        height: auto;
     }
 
     .nav-menu {
@@ -277,7 +277,7 @@ nav {
 .company-overview {
     text-align: center;
     padding: 10% 10%;
-    background: #000;
+    background: rgb(49, 49, 49);
     color: white;
     position: relative;
 
@@ -304,9 +304,10 @@ nav {
     height: max-content;
 
     .container {
-        padding-top: 10%;
+        width: 90%;
+        margin: 10% auto;
         display: grid;
-        gap: 2.5rem;
+        gap: 3rem;
 
         .info {
             padding: 10%;
@@ -320,9 +321,8 @@ nav {
 
         img {
             max-width: 100%;
-            width: 30%;
+            width: 40%;
             height: auto;
-            // padding-top: 15%;
         }
 
         @include breakpoint(mobile) {
@@ -391,8 +391,6 @@ nav {
 //clint section start
 #client {
     min-height: 50vh;
-    background-color: #269b02;
-    color: white;
     text-align: center;
 }
 
@@ -407,8 +405,6 @@ nav {
 //pricing section start
 #pricing {
     min-height: 50vh;
-    background: #269b02;
-    color: white;
     text-align: center;
 }
 

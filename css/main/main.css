@@ -79,8 +79,8 @@ nav .scrolled-up {
 }
 
 nav .logo img {
-  min-width: 30%;
-  width: 30%;
+  width: 100px;
+  height: auto;
 }
 
 nav .nav-menu {
@@ -299,7 +299,7 @@ nav .bars.active .bar:nth-child(3) {
 .company-overview {
   text-align: center;
   padding: 10% 10%;
-  background: #000;
+  background: #313131;
   color: white;
   position: relative;
 }
@@ -328,10 +328,11 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 .service .container {
-  padding-top: 10%;
+  width: 90%;
+  margin: 10% auto;
   display: -ms-grid;
   display: grid;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .service .container .info {
@@ -348,7 +349,7 @@ nav .bars.active .bar:nth-child(3) {
 
 .service .container img {
   max-width: 100%;
-  width: 30%;
+  width: 40%;
   height: auto;
 }
 
@@ -439,8 +440,6 @@ nav .bars.active .bar:nth-child(3) {
 
 #client {
   min-height: 50vh;
-  background-color: #269b02;
-  color: white;
   text-align: center;
 }
 
@@ -453,8 +452,6 @@ nav .bars.active .bar:nth-child(3) {
 
 #pricing {
   min-height: 50vh;
-  background: #269b02;
-  color: white;
   text-align: center;
 }
 
