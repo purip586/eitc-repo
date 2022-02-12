@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navMenu.classList.remove('active');
     }));
 
-    //active nav-link
+    //show active nav-link while active
     var navLink = navMenu.getElementsByClassName("nav-link");
     // Loop through the buttons and add the active class to the current/clicked button
     for (var i = 0; i < navLink.length; i++) {
@@ -46,15 +46,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    //hide sidenav on screen touch
+    document.querySelector('.hero-sec').addEventListener('click', () => {
+        hideNavbar();
+    })
+    function hideNavbar() {
+        navMenu.classList.remove('active');
+    }
+
+
+
 });
 
-//hide sidenav on screen touch
-$(".hero-sec").click(function(e) {
-    if ($("body").hasClass("layout-fullwidth offcanvas-active")) {
-         $("body").removeClass("layout-fullwidth offcanvas-active");
-           $("body").toggleClass("undefined")
-    }
-})
 
 //subtitle typing animation
 function setupTypewriter(t) {
