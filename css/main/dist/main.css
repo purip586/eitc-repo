@@ -235,9 +235,11 @@ nav .bars.active .bar:nth-child(3) {
 .company-overview {
   text-align: center;
   padding: 10% 10%;
-  background: #313131;
   color: white;
   position: relative;
+  background-image: linear-gradient(to bottom, rgba(96, 170, 0, 0.6), rgba(4, 114, 0, 0.73)), url("/img/heroslide3.jpg");
+  background-position: bottom;
+  background-size: cover;
 }
 @media screen and (min-width: 1024px) {
   .company-overview h6 {
