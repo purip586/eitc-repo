@@ -35,6 +35,20 @@ document.addEventListener("DOMContentLoaded", function () {
         navMenu.classList.remove('active');
     }));
 
+    //hide sidenav on screen touch for mobile/tablet
+    document.querySelector('.hero-sec').addEventListener('click', () => {
+        hideNavMenu();
+    })
+    function hideNavMenu() {
+        bars.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+    window.addEventListener('scroll', function() {
+        bars.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+
+
     //show active nav-link while active
     var navLink = navMenu.getElementsByClassName("nav-link");
     // Loop through the buttons and add the active class to the current/clicked button
@@ -44,14 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
             current[0].className = current[0].className.replace(" active", "");
             this.className += " active";
         });
-    }
-
-    //hide sidenav on screen touch
-    document.querySelector('.hero-sec').addEventListener('click', () => {
-        hideNavbar();
-    })
-    function hideNavbar() {
-        navMenu.classList.remove('active');
     }
 
 
