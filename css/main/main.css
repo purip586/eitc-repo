@@ -26,12 +26,12 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, 5vw, 2rem);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h3 {
   font-size: clamp(1rem, 5vw, 1.5rem);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h4,
@@ -411,7 +411,7 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 .testimonials .container .container-msg {
-  padding: 5%;
+  padding: 7%;
 }
 
 @media screen and (min-width: 320px) {
@@ -499,7 +499,7 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 #contact-us .contact-us-form .button {
-  margin-top: 1rem;
+  margin-top: 2rem;
   cursor: pointer;
   font-size: 1rem;
   text-transform: uppercase;
