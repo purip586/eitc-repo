@@ -233,7 +233,7 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 .company-overview {
-  height: 90vh;
+  max-height: 100vh;
   text-align: center;
   padding: 15%;
   color: white;
