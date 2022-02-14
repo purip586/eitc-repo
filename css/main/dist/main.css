@@ -371,7 +371,7 @@ nav .bars.active .bar:nth-child(3) {
   padding-top: 5rem;
 }
 #contact-us .contact-us-form {
-  margin: 6rem auto;
+  margin: 6rem 1rem;
   display: grid;
   align-items: center;
   justify-content: center;

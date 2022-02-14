@@ -475,7 +475,7 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 #contact-us .contact-us-form {
-  margin: 6rem auto;
+  margin: 6rem 1rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
