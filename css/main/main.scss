@@ -60,7 +60,7 @@ h3 {
 h4,
 h5 {
     font-size: clamp(0.8rem, 5vw, 1.2rem);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h6,
@@ -239,8 +239,8 @@ nav {
         }
 
         .btn {
-            background: rgb(83, 156, 0);
-            color: white;
+            background: #608d00;
+            color: rgb(240, 240, 240);
             font-weight: bold;
             font-size: 1.3rem;
             text-decoration: none;
@@ -249,7 +249,7 @@ nav {
             cursor: pointer;
 
             &:hover {
-                background-color: #91D300;
+                background-color: #496b00;
             }
 
             @include breakpoint(mobile) {
@@ -282,23 +282,25 @@ nav {
     max-height: 100vh;
     text-align: center;
     padding: 15%;
-    color: white;
     position: relative;
+    color: #000;
     background-image:
-    linear-gradient(to bottom, rgba(90, 158, 0, 0.651), rgba(1, 32, 0, 0.73)),
+    linear-gradient(to bottom, rgba(83, 185, 0, 0.7), rgba(255, 255, 255, 0.6)),
     url('/img/heroslide3.jpg');
     background-position: bottom;
     background-size: cover;
 
     @include breakpoint(laptop) {
         h6 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
         }
     }
 
     @include breakpoint(desktop) {
         h6 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
+            font-weight: 600;
         }
     }
 }
@@ -307,8 +309,7 @@ nav {
 .service {
     padding: 5% 5%;
     text-align: center;
-    background: rgb(29, 146, 0);
-    color: white;
+    background: rgb(240, 240, 240);
     max-width: 100%;
     height: max-content;
 
@@ -316,12 +317,12 @@ nav {
         width: 90%;
         margin: 10% auto;
         display: grid;
-        gap: 3rem;
+        gap: 4rem;
 
         .info {
             padding: 10%;
-            background: rgb(62, 156, 0);
-            box-shadow: darkgreen 0 1.5rem 1.5rem 0;
+            background: rgb(74, 165, 0);
+            box-shadow: rgb(0, 36, 0) 10px 10px 10px;
 
             &:hover {
                 transform: scale(1.05);
@@ -415,95 +416,6 @@ nav {
     min-height: 50vh;
     text-align: center;
 }
-
-
-//contact section start
-// .contact-wrapper {
-//     position: relative;
-//     width: 100%;
-//     height: 100%;
-//     overflow: hidden;
-
-
-//     .box div {
-//         position: absolute;
-//         width: 60px;
-//         height: 60px;
-//         background-color: #269b02;
-//         opacity: 0.5;
-//     }
-
-//     .box div:nth-child(1) {
-//         top: 12%;
-//         left: 42%;
-//         animation: animate 10s linear infinite;
-//     }
-
-//     .box div:nth-child(2) {
-//         top: 70%;
-//         left: 50%;
-//         animation: animate 7s linear infinite;
-//     }
-
-//     .box div:nth-child(3) {
-//         top: 17%;
-//         left: 6%;
-//         animation: animate 9s linear infinite;
-//     }
-
-//     .box div:nth-child(4) {
-//         top: 20%;
-//         left: 60%;
-//         animation: animate 10s linear infinite;
-//     }
-
-//     .box div:nth-child(5) {
-//         top: 67%;
-//         left: 10%;
-//         animation: animate 6s linear infinite;
-//     }
-
-//     .box div:nth-child(6) {
-//         top: 80%;
-//         left: 70%;
-//         animation: animate 12s linear infinite;
-//     }
-
-//     .box div:nth-child(7) {
-//         top: 60%;
-//         left: 80%;
-//         animation: animate 15s linear infinite;
-//     }
-
-//     .box div:nth-child(8) {
-//         top: 32%;
-//         left: 25%;
-//         animation: animate 16s linear infinite;
-//     }
-
-//     .box div:nth-child(9) {
-//         top: 90%;
-//         left: 25%;
-//         animation: animate 9s linear infinite;
-//     }
-
-//     .box div:nth-child(10) {
-//         top: 20%;
-//         left: 80%;
-//         animation: animate 5s linear infinite;
-//     }
-
-//     @keyframes animate {
-//         0% {
-//             transform: scale(0) translateY(0) rotate(0);
-//             opacity: 1;
-//         }
-
-//         100% {
-//             transform: scale(1.3) translateY(-500px) rotate(360deg);
-//             opacity: 0.5;
-//         }
-//     }
 
 
     #contact-us {
