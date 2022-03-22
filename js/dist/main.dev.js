@@ -1,5 +1,6 @@
 "use strict";
 
+AOS.init();
 document.addEventListener("DOMContentLoaded", function () {
   //autohide navbar on scroll
   el_autohide = document.querySelector('.autohide');

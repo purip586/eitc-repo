@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
   <title>Emerging IT & Computing</title>
 </head>
@@ -39,33 +40,31 @@
   <!-- nav section end here -->
 
 
-  <!-- start hero section -->
+ 
   <main>
+     <!-- start hero section -->
     <section class="hero-sec">
-      <div class="overlay-image" style="background-image: url(img/heroslide2.jpg);"></div>
       <div class="hero-title">
-
         <h3>Your IT partner</h3>
         <h1>Emerging IT & Computing</h1>
         <h2 id="typewriter">Designing and Developing Your Digital Business to go Online.</h2>
         <button class="btn" onclick="window.location.href='#contact-us'">Get Started</button>
-
       </div>
     </section>
+    <!-- end hero section -->
 
-    <section class="company-overview">
-      <div class="container">
+    <div class="company-overview">
+      <div class="container" data-aos="fade-up">
         <h1>Who We Are?</h1>
         <h6>EITC is a leading web development company established in 2021. We provide quality service using cutting edge
           technology, clean design and user friendly interface. We are committed to deliver high end web services
           which is powerful, secure, simple and highly scalable application in precise deadline.</h6>
       </div>
-    </section>
-    <!-- end hero section -->
+    </div>
 
     <!-- start service section -->
     <section class="service">
-      <h2>What Services We Offer</h2>
+      <h2 data-aos="fade-up">What Services We Offer</h2>
 
       <div class="container">
         <div class="info">
@@ -144,45 +143,27 @@
       </div>
     </section>
 
-  </main>
+    <section id="client">
+      <h2>Our Valuable Clients</h2>
 
-  <section id="client">
-    <h2>Our Valuable Clients</h2>
+      <p>Updating . . . </p>
 
-    <p>Updating . . . </p>
+    </section>
 
-  </section>
+    <section id="technology">
+      <h2>Technologies What We Use</h2>
 
-  <section id="technology">
-    <h2>Technologies What We Use</h2>
-
-    <p>Updating . . . </p>
+      <p>Updating . . . </p>
 
 
-  </section>
+    </section>
 
+    <section id="pricing">
+      <h2>The Best Deal Pricing</h2>
 
-  <section id="pricing">
-    <h2>The Best Deal Pricing</h2>
+      <p>Updating . . . </p>
 
-    <p>Updating . . . </p>
-
-  </section>
-
-  <!-- contact section start here -->
-  <!-- <div class="contact-wrapper">
-    <div class="box">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div> -->
+    </section>
 
     <div id="contact-us">
       <h2>contact us</h2>
@@ -194,7 +175,10 @@
         <input type="submit" class="button" value="Send">
       </form>
     </div>
-  </div>
+    </div>
+
+  </main>
+
 
 
   <!-- start footer section -->
@@ -239,7 +223,9 @@
 
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>

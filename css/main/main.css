@@ -7,6 +7,7 @@
   -webkit-transition: .5s all;
   transition: .5s all;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -48,7 +49,7 @@ p {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -62,20 +63,6 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem 1.5rem;
-}
-
-nav .scrolled-down {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-nav .scrolled-up {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 nav .logo img {
@@ -110,7 +97,7 @@ nav .nav-menu .nav-item {
 }
 
 nav .nav-menu .nav-item .nav-link {
-  color: white;
+  color: whitesmoke;
   font-weight: bold;
   font-size: clamp(0.5rem, 5vw, 1.2rem);
   text-decoration: none;
@@ -189,40 +176,35 @@ nav .bars.active .bar:nth-child(3) {
           transform: translateY(-8px) rotate(-45deg);
 }
 
-.hero-sec {
-  background: black;
-  color: white;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.hero-sec .overlay-image {
-  background-size: cover;
+main {
+  background-image: url(/img/heroslide2.jpg);
   background-position: center;
-  width: 100%;
-  height: 100vh;
-  max-width: 100%;
-  max-width: 100%;
-  opacity: 0.4;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
-@media screen and (min-width: 320px) {
-  .hero-sec .overlay-image {
-    background-position: left;
-  }
+.hero-sec {
+  background: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero-sec .hero-title {
   text-align: center;
   position: absolute;
-  top: 40vh;
-  margin-left: 1.5rem;
 }
 
 .hero-sec .hero-title h2 {
@@ -260,18 +242,18 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 .hero-sec .hero-title .btn {
-  background: #608d00;
-  color: #f0f0f0;
+  background: #355e00;
+  color: white;
   font-weight: bold;
   font-size: 1.3rem;
   text-decoration: none;
   border: none;
-  padding: .7rem 1rem;
+  padding: .8rem 1.2rem;
   cursor: pointer;
 }
 
 .hero-sec .hero-title .btn:hover {
-  background-color: #496b00;
+  background-color: #2d5000;
 }
 
 @media screen and (min-width: 320px) {
@@ -280,37 +262,13 @@ nav .bars.active .bar:nth-child(3) {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .hero-sec .hero-title {
-    width: 60%;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .hero-sec .hero-title {
-    width: 50%;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-sec .hero-title {
-    width: 50%;
-    text-align: left;
-  }
-}
-
 .company-overview {
-  max-height: 100vh;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 15%;
   position: relative;
-  color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 185, 0, 0.7)), to(rgba(0, 0, 0, 0.6))), url("/img/heroslide3.jpg");
-  background-image: linear-gradient(to bottom, rgba(83, 185, 0, 0.7), rgba(0, 0, 0, 0.6)), url("/img/heroslide3.jpg");
-  background-position: bottom;
-  background-size: cover;
+  color: #f0f0f0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -330,7 +288,8 @@ nav .bars.active .bar:nth-child(3) {
 .service {
   padding: 5% 5%;
   text-align: center;
-  background: #f0f0f0;
+  color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.7);
   max-width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -347,9 +306,7 @@ nav .bars.active .bar:nth-child(3) {
 
 .service .container .info {
   padding: 10%;
-  background: #4aa500;
-  -webkit-box-shadow: #002400 10px 10px 10px;
-          box-shadow: #002400 10px 10px 10px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .service .container .info:hover {
@@ -398,7 +355,7 @@ nav .bars.active .bar:nth-child(3) {
 .testimonials {
   padding: 5% 3%;
   text-align: center;
-  background: #313131;
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -448,23 +405,26 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 #client {
+  background: rgba(0, 0, 0, 0.7);
   min-height: 50vh;
   text-align: center;
 }
 
 #technology {
+  background: rgba(0, 0, 0, 0.7);
   min-height: 50vh;
-  background: #313131;
   color: white;
   text-align: center;
 }
 
 #pricing {
+  background: rgba(0, 0, 0, 0.7);
   min-height: 50vh;
   text-align: center;
 }
 
 #contact-us {
+  background: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
 }
 
