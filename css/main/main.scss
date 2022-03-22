@@ -168,7 +168,7 @@ nav {
 
 //main section start
 main {
-    background-image: url(/img/heroslide2.jpg);
+    background-image: url(/img/abstract-dark-blue-futuristic-digital-grid-background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,7 +178,7 @@ main {
 
 //hero section
 .hero-sec {
-    background: rgba($color: #000000, $alpha: 0.6);
+    background: rgba($color: #00233a, $alpha: 0.5);
     color: rgb(245, 245, 245);
     width: 100%;
     min-height: 100vh;
@@ -244,7 +244,7 @@ main {
 //company-overview section start
 .company-overview {
     min-height: 100vh;
-    background: rgba($color: #000000, $alpha: 0.6);
+    background: rgba($color: #00233a, $alpha: 0.5);
     text-align: center;
     padding: 15%;
     position: relative;
@@ -270,7 +270,7 @@ main {
     padding: 5% 5%;
     text-align: center;
     color: rgb(240, 240, 240);
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba($color: #00233a, $alpha: 0.5);
     max-width: 100%;
     height: max-content;
 
@@ -282,8 +282,8 @@ main {
 
         .info {
             padding: 10%;
-            background: rgba($color: #000000, $alpha: 0.6);
-            // box-shadow: rgb(42, 78, 0) 0px 10px 10px 5px;
+            background: rgba($color: #00233a, $alpha: 0.3);
+            box-shadow: rgb(0, 24, 41) 0px 10px 10px 5px;
 
             &:hover {
                 transform: scale(1.05);
@@ -323,7 +323,7 @@ main {
 .testimonials {
     padding: 5% 3%;
     text-align: center;
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba($color: #00233a, $alpha: 0.5);
     color: white;
     height: max-content;
 
@@ -360,14 +360,14 @@ main {
 
 //clint section start
 #client {
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba($color: #00233a, $alpha: 0.5);
     min-height: 50vh;
     text-align: center;
 }
 
 //tech section start
 #technology {
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba($color: #00233a, $alpha: 0.5);
     min-height: 50vh;
     color: white;
     text-align: center;
@@ -375,14 +375,14 @@ main {
 
 //pricing section start
 #pricing {
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba($color: #00233a, $alpha: 0.5);
     min-height: 50vh;
     text-align: center;
 }
 
 
 #contact-us {
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba($color: #00233a, $alpha: 0.5);
     min-height: 100vh;
 
     h2 {

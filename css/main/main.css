@@ -177,7 +177,7 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 main {
-  background-image: url(/img/heroslide2.jpg);
+  background-image: url(/img/abstract-dark-blue-futuristic-digital-grid-background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ main {
 }
 
 .hero-sec {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 35, 58, 0.5);
   color: whitesmoke;
   width: 100%;
   min-height: 100vh;
@@ -264,7 +264,7 @@ main {
 
 .company-overview {
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 35, 58, 0.5);
   text-align: center;
   padding: 15%;
   position: relative;
@@ -289,7 +289,7 @@ main {
   padding: 5% 5%;
   text-align: center;
   color: #f0f0f0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 35, 58, 0.5);
   max-width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -306,7 +306,9 @@ main {
 
 .service .container .info {
   padding: 10%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 35, 58, 0.3);
+  -webkit-box-shadow: #001829 0px 10px 10px 5px;
+          box-shadow: #001829 0px 10px 10px 5px;
 }
 
 .service .container .info:hover {
@@ -355,7 +357,7 @@ main {
 .testimonials {
   padding: 5% 3%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 35, 58, 0.5);
   color: white;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -405,26 +407,26 @@ main {
 }
 
 #client {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 35, 58, 0.5);
   min-height: 50vh;
   text-align: center;
 }
 
 #technology {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 35, 58, 0.5);
   min-height: 50vh;
   color: white;
   text-align: center;
 }
 
 #pricing {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 35, 58, 0.5);
   min-height: 50vh;
   text-align: center;
 }
 
 #contact-us {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 35, 58, 0.5);
   min-height: 100vh;
 }
 
