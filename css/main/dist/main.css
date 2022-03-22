@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.5s all;
-  font-family: sans-serif;
+  font-family: "source code pro", monospace;
   scroll-behavior: smooth;
 }
 
@@ -20,7 +20,7 @@ p {
 
 h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2 {

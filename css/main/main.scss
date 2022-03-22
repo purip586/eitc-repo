@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: .5s all;
-    font-family: sans-serif;
+    font-family: 'source code pro', monospace;
     scroll-behavior: smooth;
 }
 
@@ -15,13 +15,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-// font families
-$font-family-monospace: Menlo,
-Monaco,
-Consolas,
-"Liberation Mono",
-"Courier New",
-monospace;
 
 //spacing
 h1,
@@ -36,7 +29,7 @@ p {
 
 h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 700;
+    font-weight: 800;
 }
 
 h2 {
