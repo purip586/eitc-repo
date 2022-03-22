@@ -8,6 +8,7 @@
   transition: .5s all;
   font-family: 'source code pro', monospace;
   scroll-behavior: smooth;
+  color: #f0f0f0;
 }
 
 h1,
@@ -268,7 +269,6 @@ main {
   text-align: center;
   padding: 15%;
   position: relative;
-  color: #f0f0f0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -288,7 +288,6 @@ main {
 .service {
   padding: 5% 5%;
   text-align: center;
-  color: #f0f0f0;
   background: rgba(0, 35, 58, 0.5);
   max-width: 100%;
   height: -webkit-max-content;
@@ -358,7 +357,6 @@ main {
   padding: 5% 3%;
   text-align: center;
   background: rgba(0, 35, 58, 0.5);
-  color: #f0f0f0;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -472,10 +470,11 @@ main {
   font-size: 1rem;
   text-transform: uppercase;
   color: #f0f0f0;
+  background: #376100;
 }
 
 #contact-us .contact-us-form .button:hover {
-  background: #376100;
+  background: #2a4b00;
 }
 
 footer {
