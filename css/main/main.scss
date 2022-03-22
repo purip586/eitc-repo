@@ -283,7 +283,7 @@ main {
         .info {
             padding: 10%;
             background: rgba($color: #00233a, $alpha: 0.3);
-            box-shadow: rgb(0, 24, 41) 0px 10px 10px 5px;
+            box-shadow: rgb(0, 24, 41) 5px 5px 5px 5px;
 
             &:hover {
                 transform: scale(1.05);

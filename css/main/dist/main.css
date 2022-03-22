@@ -236,7 +236,7 @@ main {
 .service .container .info {
   padding: 10%;
   background: rgba(0, 35, 58, 0.3);
-  box-shadow: #001829 0px 10px 10px 5px;
+  box-shadow: #001829 5px 5px 5px 5px;
 }
 .service .container .info:hover {
   transform: scale(1.05);
