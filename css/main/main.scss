@@ -231,6 +231,7 @@ main {
 
             &:hover {
                 background-color: #2d5000;
+                transform: scale(1.10);
             }
 
             @include breakpoint(mobile) {
@@ -323,14 +324,16 @@ main {
     padding: 5% 3%;
     text-align: center;
     background: rgba($color: #00233a, $alpha: 0.5);
-    height: max-content;
+    min-height: 100vh;
 
     .container {
-        padding-top: 5%;
+        margin-top: 5%;
         display: grid;
+        gap: 2rem;
 
         .container-msg {
             padding: 7%;
+            background: rgba($color: #00233a, $alpha: 0.3);
         }
 
         @include breakpoint(mobile) {

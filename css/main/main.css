@@ -255,6 +255,8 @@ main {
 
 .hero-sec .hero-title .btn:hover {
   background-color: #2d5000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media screen and (min-width: 320px) {
@@ -357,19 +359,19 @@ main {
   padding: 5% 3%;
   text-align: center;
   background: rgba(0, 35, 58, 0.5);
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  min-height: 100vh;
 }
 
 .testimonials .container {
-  padding-top: 5%;
+  margin-top: 5%;
   display: -ms-grid;
   display: grid;
+  gap: 2rem;
 }
 
 .testimonials .container .container-msg {
   padding: 7%;
+  background: rgba(0, 35, 58, 0.3);
 }
 
 @media screen and (min-width: 320px) {
