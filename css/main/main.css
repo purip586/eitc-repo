@@ -6,7 +6,7 @@
           box-sizing: border-box;
   -webkit-transition: .5s all;
   transition: .5s all;
-  font-family: 'source code pro', monospace;
+  font-family: sans-serif;
   scroll-behavior: smooth;
   color: #f0f0f0;
 }
