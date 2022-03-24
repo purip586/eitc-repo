@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    setInterval(run, 2000);
+    setInterval(run, 5000);
 
 
 

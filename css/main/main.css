@@ -356,14 +356,19 @@ main {
 }
 
 .testimonials {
-  padding: 5% 3%;
   text-align: center;
   background: rgba(0, 35, 58, 0.5);
   min-height: 100vh;
 }
 
-.testimonials .msg-box {
-  margin-top: 5%;
+.testimonials .carousel {
+  overflow: hidden;
+  white-space: inherit;
+  display: inline-block;
+}
+
+.testimonials .carousel .msg-box {
+  margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,24 +379,23 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 2rem;
-  overflow-x: visible;
-}
-
-.testimonials .msg-box .msg {
-  padding: 3%;
-  background: rgba(0, 35, 58, 0.5);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   -webkit-transition: -webkit-transform .5s linear;
   transition: -webkit-transform .5s linear;
   transition: transform .5s linear;
   transition: transform .5s linear, -webkit-transform .5s linear;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+}
+
+.testimonials .carousel .msg-box .msg {
+  padding: 3%;
+  background: rgba(0, 35, 58, 0.5);
   width: 500px;
-  height: 300px;
+  height: 400px;
 }
 
 @media screen and (min-width: 320px) {
-  .testimonials .msg-box {
+  .testimonials .carousel .msg-box {
     -ms-grid-column: 1fr;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -399,7 +403,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .testimonials .msg-box {
+  .testimonials .carousel .msg-box {
     -ms-grid-column: 1fr 1fr;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -407,7 +411,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  .testimonials .msg-box {
+  .testimonials .carousel .msg-box {
     -ms-grid-column: 1fr 1fr 1fr;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -415,7 +419,7 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-  .testimonials .msg-box {
+  .testimonials .carousel .msg-box {
     -ms-grid-column: 1fr 1fr 1fr;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);

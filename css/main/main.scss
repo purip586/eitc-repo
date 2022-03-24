@@ -321,46 +321,51 @@ main {
 
 //testimonials start here
 .testimonials {
-    padding: 5% 3%;
     text-align: center;
     background: rgba($color: #00233a, $alpha: 0.5);
     min-height: 100vh;
 
-    .msg-box {
-        margin-top: 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        overflow-x: visible;
+    .carousel {
+        overflow: hidden;
+        white-space: inherit;
+        display: inline-block;
+        .msg-box {
+            margin-top: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
 
-            .msg{
+            transform: translateX(0);
+            transition: transform .5s linear;
+
+            .msg {
                 padding: 3%;
                 background: rgba($color: #00233a, $alpha: 0.5);
-                transition: transform .5s linear;
-                transform: translateX(0);
+
                 width: 500px;
-                height: 300px;
+                height: 400px;
             }
 
-        @include breakpoint(mobile) {
-            -ms-grid-column: 1fr;
-            grid-template-columns: repeat(1, 1fr);
-        }
+            @include breakpoint(mobile) {
+                -ms-grid-column: 1fr;
+                grid-template-columns: repeat(1, 1fr);
+            }
 
-        @include breakpoint(tablet) {
-            -ms-grid-column: 1fr 1fr;
-            grid-template-columns: repeat(2, 1fr);
-        }
+            @include breakpoint(tablet) {
+                -ms-grid-column: 1fr 1fr;
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-        @include breakpoint(laptop) {
-            -ms-grid-column: 1fr 1fr 1fr;
-            grid-template-columns: repeat(3, 1fr);
-        }
+            @include breakpoint(laptop) {
+                -ms-grid-column: 1fr 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
+            }
 
-        @include breakpoint(desktop) {
-            -ms-grid-column: 1fr 1fr 1fr;
-            grid-template-columns: repeat(3, 1fr);
+            @include breakpoint(desktop) {
+                -ms-grid-column: 1fr 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
     }
 }

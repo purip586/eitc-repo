@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     msg.style.transform = "translateX(".concat(-idx * 500, "px)");
   }
 
-  setInterval(run, 2000);
+  setInterval(run, 5000);
 }); //subtitle typing animation
 
 function setupTypewriter(t) {
