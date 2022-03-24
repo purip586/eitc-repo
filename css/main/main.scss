@@ -238,7 +238,7 @@ main {
                 margin: 1rem auto;
             }
         }
-        
+
 
     }
 }
@@ -326,15 +326,22 @@ main {
     background: rgba($color: #00233a, $alpha: 0.5);
     min-height: 100vh;
 
-    .container {
+    .msg-box {
         margin-top: 5%;
-        display: grid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 2rem;
+        overflow-x: visible;
 
-        .container-msg {
-            padding: 7%;
-            background: rgba($color: #00233a, $alpha: 0.3);
-        }
+            .msg{
+                padding: 3%;
+                background: rgba($color: #00233a, $alpha: 0.5);
+                transition: transform .5s linear;
+                transform: translateX(0);
+                width: 500px;
+                height: 300px;
+            }
 
         @include breakpoint(mobile) {
             -ms-grid-column: 1fr;

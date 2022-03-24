@@ -59,7 +59,24 @@ document.addEventListener("DOMContentLoaded", function () {
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
     });
+  } //testimonial carasoul
+
+
+  var msg = document.getElementById('msgbox');
+  var div = document.querySelectorAll('#msgbox div');
+  var idx = 0;
+
+  function run() {
+    idx++;
+
+    if (idx > div.length - 1) {
+      idx = 0;
+    }
+
+    msg.style.transform = "translateX(".concat(-idx * 500, "px)");
   }
+
+  setInterval(run, 2000);
 }); //subtitle typing animation
 
 function setupTypewriter(t) {

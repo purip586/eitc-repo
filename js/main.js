@@ -1,4 +1,5 @@
 AOS.init();
+
 document.addEventListener("DOMContentLoaded", function () {
 
     //autohide navbar on scroll
@@ -40,11 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.hero-sec').addEventListener('click', () => {
         hideNavMenu();
     })
+
     function hideNavMenu() {
         bars.classList.remove('active');
         navMenu.classList.remove('active');
     }
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         bars.classList.remove('active');
         navMenu.classList.remove('active');
     });
@@ -60,6 +62,27 @@ document.addEventListener("DOMContentLoaded", function () {
             this.className += " active";
         });
     }
+
+    //testimonial carasoul
+
+    const msg = document.getElementById('msgbox');
+    const div = document.querySelectorAll('#msgbox div')
+
+    let idx = 0;
+
+    function run() {
+        idx++;
+
+        if (idx > div.length - 1) {
+            idx = 0;
+        }
+
+        msg.style.transform = `translateX(${-idx * 500}px)`;
+
+    }
+
+    setInterval(run, 2000);
+
 
 
 
