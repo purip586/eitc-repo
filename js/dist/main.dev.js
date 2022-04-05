@@ -59,24 +59,31 @@ document.addEventListener("DOMContentLoaded", function () {
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
     });
-  } //testimonial carasoul
+  } // testimonial carasoul
 
 
-  var msg = document.getElementById('msgbox');
-  var div = document.querySelectorAll('#msgbox div');
-  var idx = 0;
-
-  function run() {
-    idx++;
-
-    if (idx > div.length - 1) {
-      idx = 0;
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    center: true,
+    item: 3,
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    nav: false,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 3
+      }
     }
-
-    msg.style.transform = "translateX(".concat(-idx * 500, "px)");
-  }
-
-  setInterval(run, 5000);
+  });
 }); //subtitle typing animation
 
 function setupTypewriter(t) {

@@ -67,7 +67,7 @@ nav {
 }
 
 nav .logo img {
-  width: 100px;
+  width: 30%;
   height: auto;
 }
 
@@ -288,7 +288,7 @@ main {
 }
 
 .service {
-  padding: 5% 5%;
+  margin: 5% 5%;
   text-align: center;
   background: rgba(0, 35, 58, 0.5);
   max-width: 100%;
@@ -298,11 +298,10 @@ main {
 }
 
 .service .container {
-  width: 90%;
   margin: 10% auto;
   display: -ms-grid;
   display: grid;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .service .container .info {
@@ -356,74 +355,32 @@ main {
 }
 
 .testimonials {
+  padding-top: 5%;
   text-align: center;
   background: rgba(0, 35, 58, 0.5);
   min-height: 100vh;
 }
 
-.testimonials .carousel {
-  overflow: hidden;
-  white-space: inherit;
-  display: inline-block;
+.testimonials .container {
+  margin: 5% 5%;
 }
 
-.testimonials .carousel .msg-box {
-  margin-top: 3%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: -webkit-transform .5s linear;
-  transition: -webkit-transform .5s linear;
-  transition: transform .5s linear;
-  transition: transform .5s linear, -webkit-transform .5s linear;
+.testimonials .container .item {
+  border: 2px solid #00233a;
+  padding: 10%;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 2, 20, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 19px 38px rgba(0, 2, 20, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0.2;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+          transform: scale3d(0.8, 0.8, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.testimonials .carousel .msg-box .msg {
-  padding: 3%;
-  background: rgba(0, 35, 58, 0.5);
-  width: 500px;
-  height: 400px;
-}
-
-@media screen and (min-width: 320px) {
-  .testimonials .carousel .msg-box {
-    -ms-grid-column: 1fr;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .testimonials .carousel .msg-box {
-    -ms-grid-column: 1fr 1fr;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .testimonials .carousel .msg-box {
-    -ms-grid-column: 1fr 1fr 1fr;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .testimonials .carousel .msg-box {
-    -ms-grid-column: 1fr 1fr 1fr;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
+.testimonials .container .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
 }
 
 #client {
