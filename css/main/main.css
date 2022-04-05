@@ -8,7 +8,7 @@
   transition: .5s all;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  color: #f0f0f0;
+  color: #e6e6e6;
 }
 
 h1,
@@ -84,7 +84,7 @@ nav .nav-menu {
   right: 0;
   width: 50%;
   height: 100vh;
-  background-color: #000;
+  background-color: #002137;
   text-align: center;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -98,7 +98,7 @@ nav .nav-menu .nav-item {
 }
 
 nav .nav-menu .nav-item .nav-link {
-  color: whitesmoke;
+  color: #e6e6e6;
   font-weight: bold;
   font-size: clamp(0.5rem, 5vw, 1.2rem);
   text-decoration: none;
@@ -178,7 +178,7 @@ nav .bars.active .bar:nth-child(3) {
 }
 
 main {
-  background-image: url(/img/abstract-dark-blue-futuristic-digital-grid-background.jpg);
+  background-image: url(/img/darkblue.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -187,8 +187,8 @@ main {
 }
 
 .hero-sec {
-  background: rgba(0, 35, 58, 0.5);
-  color: whitesmoke;
+  background: rgba(0, 33, 55, 0.5);
+  color: #e6e6e6;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -267,7 +267,7 @@ main {
 
 .company-overview {
   min-height: 100vh;
-  background: rgba(0, 35, 58, 0.5);
+  background: rgba(0, 33, 55, 0.5);
   text-align: center;
   padding: 15%;
   position: relative;
@@ -288,9 +288,8 @@ main {
 }
 
 .service {
-  margin: 5% 5%;
   text-align: center;
-  background: rgba(0, 35, 58, 0.5);
+  background: rgba(0, 33, 55, 0.5);
   max-width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -298,7 +297,7 @@ main {
 }
 
 .service .container {
-  margin: 10% auto;
+  margin: 10% 10%;
   display: -ms-grid;
   display: grid;
   gap: 5rem;
@@ -306,7 +305,7 @@ main {
 
 .service .container .info {
   padding: 10%;
-  background: rgba(0, 35, 58, 0.3);
+  background: rgba(0, 33, 55, 0.6);
   -webkit-box-shadow: #001829 5px 5px 5px 5px;
           box-shadow: #001829 5px 5px 5px 5px;
 }
@@ -357,7 +356,7 @@ main {
 .testimonials {
   padding-top: 5%;
   text-align: center;
-  background: rgba(0, 35, 58, 0.5);
+  background: rgba(0, 33, 55, 0.5);
   min-height: 100vh;
 }
 
@@ -366,7 +365,7 @@ main {
 }
 
 .testimonials .container .item {
-  border: 2px solid #00233a;
+  border: 2px solid #002137;
   padding: 10%;
   -webkit-box-shadow: 0 19px 38px rgba(0, 2, 20, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
           box-shadow: 0 19px 38px rgba(0, 2, 20, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
@@ -384,28 +383,28 @@ main {
 }
 
 #client {
-  background: rgba(0, 35, 58, 0.5);
+  background: rgba(0, 33, 55, 0.5);
   color: #f0f0f0;
   min-height: 100vh;
   text-align: center;
 }
 
 #technology {
-  background: rgba(0, 35, 58, 0.5);
+  background: rgba(0, 33, 55, 0.5);
   color: #f0f0f0;
   min-height: 100vh;
   text-align: center;
 }
 
 #pricing {
-  background: rgba(0, 35, 58, 0.5);
+  background: rgba(0, 33, 55, 0.5);
   color: #f0f0f0;
   min-height: 100vh;
   text-align: center;
 }
 
 #contact-us {
-  background: rgba(0, 35, 58, 0.5);
+  background: rgba(0, 33, 55, 0.5);
   min-height: 100vh;
 }
 
@@ -458,7 +457,7 @@ main {
 
 footer {
   background: #181818;
-  color: white;
+  color: #e6e6e6;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;

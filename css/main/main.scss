@@ -9,7 +9,7 @@
     transition: .5s all;
     font-family: sans-serif;
     scroll-behavior: smooth;
-    color: rgb(240, 240, 240);
+    color: rgb(230, 230, 230);
 }
 
 // typography
@@ -90,7 +90,7 @@ nav {
         right: 0;
         width: 50%;
         height: 100vh;
-        background-color: #000;
+        background-color: #002137;
         text-align: center;
         transition: all .5s ease-in-out;
         transform: translateX(100%);
@@ -100,7 +100,7 @@ nav {
             margin: 0.8rem 0;
 
             .nav-link {
-                color: rgb(245, 245, 245);
+                color: rgb(230, 230, 230);
                 font-weight: bold;
                 font-size: clamp(0.5rem, 5vw, 1.2rem);
                 text-decoration: none;
@@ -169,7 +169,7 @@ nav {
 
 //main section start
 main {
-    background-image: url(/img/abstract-dark-blue-futuristic-digital-grid-background.jpg);
+    background-image: url(/img/darkblue.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,8 +179,8 @@ main {
 
 //hero section
 .hero-sec {
-    background: rgba($color: #00233a, $alpha: 0.5);
-    color: rgb(245, 245, 245);
+    background: rgba($color: #002137, $alpha: 0.5);
+    color: rgb(230, 230, 230);
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -246,7 +246,7 @@ main {
 //company-overview section start
 .company-overview {
     min-height: 100vh;
-    background: rgba($color: #00233a, $alpha: 0.5);
+    background: rgba($color: #002137, $alpha: 0.5);
     text-align: center;
     padding: 15%;
     position: relative;
@@ -268,20 +268,19 @@ main {
 
 //service section start
 .service {
-    margin: 5% 5%;
     text-align: center;
-    background: rgba($color: #00233a, $alpha: 0.5);
+    background: rgba($color: #002137, $alpha: 0.5);
     max-width: 100%;
     height: max-content;
 
     .container {
-        margin: 10% auto;
+        margin: 10% 10%;
         display: grid;
         gap: 5rem;
 
         .info {
             padding: 10%;
-            background: rgba($color: #00233a, $alpha: 0.3);
+            background: rgba($color: #002137, $alpha: 0.6);
             box-shadow: rgb(0, 24, 41) 5px 5px 5px 5px;
 
             &:hover {
@@ -322,14 +321,14 @@ main {
 .testimonials {
     padding-top: 5%;
     text-align: center;
-    background: rgba($color: #00233a, $alpha: 0.5);
+    background: rgba($color: #002137, $alpha: 0.5);
     min-height: 100vh;
 
     .container{
         margin: 5% 5%;
 
         .item{
-            border: 2px solid #00233a;
+            border: 2px solid #002137;
             padding: 10%;
             box-shadow: 0 19px 38px rgba(0, 2, 20, 0.10), 0 15px 12px rgba(0, 0, 0, 0.2);
             opacity: 0.2;
@@ -348,7 +347,7 @@ main {
 
 //clint section start
 #client {
-    background: rgba($color: #00233a, $alpha: 0.5);
+    background: rgba($color: #002137, $alpha: 0.5);
     color: rgb(240, 240, 240);
     min-height: 100vh;
     text-align: center;
@@ -356,7 +355,7 @@ main {
 
 //tech section start
 #technology {
-    background: rgba($color: #00233a, $alpha: 0.5);
+    background: rgba($color: #002137, $alpha: 0.5);
     color: rgb(240, 240, 240);
     min-height: 100vh;
     text-align: center;
@@ -364,7 +363,7 @@ main {
 
 //pricing section start
 #pricing {
-    background: rgba($color: #00233a, $alpha: 0.5);
+    background: rgba($color: #002137, $alpha: 0.5);
     color: rgb(240, 240, 240);
     min-height: 100vh;
     text-align: center;
@@ -372,7 +371,7 @@ main {
 
 
 #contact-us {
-    background: rgba($color: #00233a, $alpha: 0.5);
+    background: rgba($color: #002137, $alpha: 0.5);
     min-height: 100vh;
 
     h2 {
@@ -423,7 +422,7 @@ main {
 //footer start here
 footer {
     background: rgb(24, 24, 24);
-    color: white;
+    color: rgb(230, 230, 230);
     width: 100%;
     height: max-content;
     text-align: center;
