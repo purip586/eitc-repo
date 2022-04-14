@@ -365,7 +365,7 @@ main {
 }
 
 .testimonials .container .item {
-  border: 2px solid #002137;
+  border: 2px solid #f0f0f0;
   padding: 10%;
   -webkit-box-shadow: 0 19px 38px rgba(0, 2, 20, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
           box-shadow: 0 19px 38px rgba(0, 2, 20, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
