@@ -6,7 +6,7 @@
   transition: 0.5s all;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  color: #e6e6e6;
+  color: #e1e1e1;
 }
 
 h1,
@@ -154,8 +154,7 @@ main {
 }
 
 .hero-sec {
-  background: rgba(0, 33, 55, 0.5);
-  color: #e6e6e6;
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -210,7 +209,7 @@ main {
 
 .company-overview {
   min-height: 100vh;
-  background: rgba(0, 33, 55, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 15%;
   position: relative;
@@ -230,19 +229,18 @@ main {
 
 .service {
   text-align: center;
-  background: rgba(0, 33, 55, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   max-width: 100%;
-  height: max-content;
+  min-height: 100vh;
 }
 .service .container {
-  margin: 10% 10%;
+  padding: 10% 10%;
   display: grid;
   gap: 5rem;
 }
 .service .container .info {
   padding: 10%;
-  background: rgba(0, 33, 55, 0.6);
-  box-shadow: #001829 5px 5px 5px 5px;
+  border: 1px solid #f0f0f0;
 }
 .service .container .info:hover {
   transform: scale(1.05);
@@ -280,22 +278,23 @@ main {
 .testimonials {
   padding-top: 5%;
   text-align: center;
-  background: rgba(0, 33, 55, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
 }
 .testimonials .container {
-  margin: 5% 5%;
+  padding: 5% auto;
 }
 .testimonials .container .item {
-  margin: 3% 1%;
-  padding: 10%;
+  margin: 5% 1%;
+  padding: 7%;
   box-shadow: 0 19px 38px rgba(0, 4, 35, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
   opacity: 0.2;
   transform: scale3d(0.8, 0.8, 1);
   transition: all 0.3s ease-in-out;
+  border: 1px solid #f0f0f0;
 }
 .testimonials .container .item img {
-  width: 130px;
+  width: 110px;
   height: auto;
   border-radius: 50%;
   margin: 0 auto;
@@ -306,28 +305,58 @@ main {
 }
 
 #client {
-  background: rgba(0, 33, 55, 0.5);
-  color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
   text-align: center;
+}
+#client .container {
+  margin: 5% auto;
+}
+#client .container .item {
+  margin: 5% 1%;
+  padding: 5%;
+  box-shadow: 0 19px 38px rgba(0, 4, 35, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+#client .container .item img {
+  width: 130px;
+  height: auto;
+  margin: 0 auto;
+}
+#client .container .owl-item.active.center .item {
+  transform: scale3d(1, 1, 1);
 }
 
 #technology {
-  background: rgba(0, 33, 55, 0.5);
-  color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
   text-align: center;
 }
+#technology .container {
+  margin: 5% auto;
+}
+#technology .container .item {
+  margin: 5% 1%;
+  padding: 5%;
+  box-shadow: 0 19px 38px rgba(0, 4, 35, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+#technology .container .item img {
+  width: 130px;
+  height: auto;
+  margin: 0 auto;
+}
 
 #pricing {
-  background: rgba(0, 33, 55, 0.5);
-  color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
   text-align: center;
 }
 
 #contact-us {
-  background: rgba(0, 33, 55, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
 }
 #contact-us h2 {
@@ -380,7 +409,7 @@ footer .container {
 }
 footer .container .footer-info img {
   max-width: 100%;
-  width: 30%;
+  width: 20%;
   height: auto;
 }
 footer .container .footer-nav li {
