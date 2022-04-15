@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     autoplayTimeout: 8500,
     smartSpeed: 450,
-    nav: false,
+    nav: true,
     dots: true,
     responsive: {
       0: {

@@ -58,7 +58,7 @@ p {
 
 //navbar
 nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -67,15 +67,15 @@ nav {
     justify-content: space-between;
     padding: 1rem 1.5rem;
 
-    // .scrolled-down {
-    //     transform: translateY(-100%);
-    //     transition: all 0.3s ease-in-out;
-    // }
+    .scrolled-down {
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+    }
 
-    // .scrolled-up {
-    //     transform: translateY(0);
-    //     transition: all 0.3s ease-in-out;
-    // }
+    .scrolled-up {
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+    }
 
     .logo img {
         width: 30%;
@@ -328,12 +328,19 @@ main {
         margin: 5% 5%;
 
         .item{
-            border: 2px solid #f0f0f0;
+            margin: 3% 1%;
             padding: 10%;
-            box-shadow: 0 19px 38px rgba(0, 2, 20, 0.10), 0 15px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 19px 38px rgba(0, 4, 35, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
             opacity: 0.2;
             transform: scale3d(0.8,0.8,1);
             transition: all 0.3s ease-in-out;
+
+            img{
+                width: 130px;
+                height: auto;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
 
         }
 
