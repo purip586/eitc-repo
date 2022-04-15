@@ -149,14 +149,19 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
   background-attachment: fixed;
+  scroll-snap-type: y mandatory;
+  min-height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
 }
 
 .hero-sec {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  min-height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -208,7 +213,6 @@ main {
 }
 
 .company-overview {
-  min-height: 100vh;
   background: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 15%;
@@ -231,7 +235,6 @@ main {
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
   max-width: 100%;
-  min-height: 100vh;
 }
 .service .container {
   padding: 10% 10%;
@@ -279,7 +282,6 @@ main {
   padding-top: 5%;
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
-  min-height: 100vh;
 }
 .testimonials .container {
   padding: 5% auto;
@@ -306,7 +308,6 @@ main {
 
 #client {
   background: rgba(0, 0, 0, 0.7);
-  min-height: 100vh;
   text-align: center;
 }
 #client .container {
@@ -330,7 +331,6 @@ main {
 
 #technology {
   background: rgba(0, 0, 0, 0.7);
-  min-height: 100vh;
   text-align: center;
 }
 #technology .container {
@@ -351,13 +351,11 @@ main {
 
 #pricing {
   background: rgba(0, 0, 0, 0.7);
-  min-height: 100vh;
   text-align: center;
 }
 
 #contact-us {
   background: rgba(0, 0, 0, 0.7);
-  min-height: 100vh;
 }
 #contact-us h2 {
   text-transform: uppercase;
@@ -402,6 +400,7 @@ footer {
   width: 100%;
   height: max-content;
   text-align: center;
+  position: relative;
 }
 footer .container {
   padding-top: 5%;
