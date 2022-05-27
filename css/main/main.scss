@@ -181,17 +181,8 @@ main {
 section {
     min-height: 100vh;
     scroll-snap-align: start;
-
-    width: 100%;
     max-width: 90%;
     margin: auto;
-    background-image: linear-gradient(transparent 12%,
-            currentColor 30%,
-            currentColor 70%,
-            transparent 86%,
-        );
-    background-clip: text;
-    -webkit-background-clip: text;
     background-attachment: fixed;
 }
 
