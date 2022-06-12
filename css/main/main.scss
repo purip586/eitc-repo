@@ -9,7 +9,7 @@
     transition: .5s all;
     font-family: sans-serif;
     scroll-behavior: smooth;
-    color: rgb(225, 225, 225);
+    color: rgb(215, 215, 215);
 }
 
 // typography
@@ -99,7 +99,7 @@ nav {
             margin: 0.8rem 0;
 
             .nav-link {
-                color: rgb(230, 230, 230);
+                color: rgb(215, 215, 215);
                 font-weight: bold;
                 font-size: clamp(0.5rem, 5vw, 1.2rem);
                 text-decoration: none;
@@ -230,7 +230,7 @@ section {
 
         .btn {
             background: #376100;
-            color: white;
+            color: rgb(215, 215, 215);
             font-weight: bold;
             font-size: 1.3rem;
             text-decoration: none;
@@ -289,9 +289,12 @@ section {
 
         .info {
             padding: 10%;
-            border: 1px solid #f0f0f0;
-            // background: rgba($color: #001d32, $alpha: 0.6);
-            // box-shadow: rgb(255, 255, 255) 5px 5px 5px 5px;
+            background: rgba(0, 40, 92, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(1, 147, 202, 0.3);
 
             &:hover {
                 transform: scale(1.05);
@@ -329,20 +332,25 @@ section {
 
 //testimonials start here
 .testimonials {
-    padding-top: 5%;
+    height: 100vh;
+    margin: 5% 3%;
     text-align: center;
 
     .container {
-        padding: 5% auto;
+        margin: 5% auto;
 
         .item {
             margin: 5% 1%;
-            padding: 7%;
-            box-shadow: 0 19px 38px rgba(0, 4, 35, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+            padding: 10%;
             opacity: 0.2;
             transform: scale3d(0.8, 0.8, 1);
             transition: all 0.3s ease-in-out;
-            border: 1px solid #f0f0f0;
+            background: rgba(0, 40, 92, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(1, 147, 202, 0.3);
 
             img {
                 width: 110px;
@@ -363,22 +371,28 @@ section {
 
 //clint section start
 #client {
+    height: 100vh;
+    margin-top: 10%;
     text-align: center;
 
     .container {
-        margin: 5% auto;
+        margin: 10% auto;
 
         .item {
-            margin: 5% 1%;
-            padding: 5%;
-            box-shadow: 0 19px 38px rgba(0, 4, 35, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+            margin: 10% 1%;
+            padding: 7%;
             transform: scale3d(0.8, 0.8, 1);
             transition: all 0.3s ease-in-out;
+            background: rgba(0, 40, 92, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(1, 147, 202, 0.3);
 
             img {
                 width: 130px;
                 height: auto;
-                // border-radius: 50%;
                 margin: 0 auto;
             }
 
@@ -393,17 +407,24 @@ section {
 
 //tech section start
 #technology {
+    height: 100vh;
+    margin-top: 10%;
     text-align: center;
 
     .container {
-        margin: 5% auto;
+        margin: 10% auto;
 
         .item {
-            margin: 5% 1%;
-            padding: 5%;
-            box-shadow: 0 19px 38px rgba(0, 4, 35, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+            margin: 10% 1%;
+            padding: 7%;
             transform: scale3d(0.8, 0.8, 1);
             transition: all 0.3s ease-in-out;
+            background: rgba(0, 40, 92, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(1, 147, 202, 0.3);
 
             img {
                 width: 130px;
@@ -425,7 +446,7 @@ section {
         font-size: 2rem;
         text-align: center;
         padding-top: 5rem;
-        color: rgb(245, 245, 245);
+        color: rgb(215, 215, 215);
     }
 
     .contact-us-form {
@@ -439,9 +460,9 @@ section {
             padding: 1rem;
             border: none;
             outline: none;
-            border-bottom: white 1px solid;
+            border-bottom: rgb(215, 215, 215) 1px solid;
             background: none;
-            color: rgb(240, 240, 240);
+            color: rgb(215, 215, 215);
         }
 
         input[type=submit] {
@@ -453,7 +474,7 @@ section {
             cursor: pointer;
             font-size: 1rem;
             text-transform: uppercase;
-            color: rgb(240, 240, 240);
+            color: rgb(215, 215, 215);
             background: #376100;
         }
 
@@ -468,7 +489,7 @@ section {
 //footer start here
 footer {
     background: rgb(24, 24, 24);
-    color: rgb(230, 230, 230);
+    color: rgb(215, 215, 215);
     width: 100%;
     height: max-content;
     text-align: center;
